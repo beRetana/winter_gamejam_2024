@@ -8,6 +8,7 @@ public class PegManager : MonoBehaviour
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.NewPegCreated, NewPegCreated);
+        DataMessenger.SetGameObject(GameObjectKey.PegManager, gameObject);
     }
     private void OnDisable()
     {
@@ -18,5 +19,10 @@ public class PegManager : MonoBehaviour
         // Add peg to dictionary
         currentPegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
             DataMessenger.GetGameObject(GameObjectKey.NewPegObject).GetComponent<Peg>());
+    }
+
+    public int GetBluePegSize()
+    {
+        return currentPegs.Count;
     }
 }

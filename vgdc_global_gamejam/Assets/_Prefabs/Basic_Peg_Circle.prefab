@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scoredAdded: 100
+  _timeOn: 3
 --- !u!1 &8017197580410547134
 GameObject:
   m_ObjectHideFlags: 0

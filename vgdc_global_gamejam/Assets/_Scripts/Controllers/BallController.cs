@@ -20,6 +20,7 @@ public class BallController : MonoBehaviour
     {
         EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StartListening(EventKey.ShootBall, AddForce);
+        DataMessenger.SetGameObject(GameObjectKey.PlayerBall, gameObject);
     }
     private void OnDisable()
     {
