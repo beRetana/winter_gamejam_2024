@@ -5,7 +5,7 @@ public class TurretGunFiring : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     private void Update()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }

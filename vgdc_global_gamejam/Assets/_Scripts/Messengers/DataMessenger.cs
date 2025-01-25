@@ -385,11 +385,12 @@ public enum BoolKey
 }
 public enum FloatKey
 {
-
+    
 }
 public enum IntKey
 {
-
+    CurrentScore,
+    ScoreToAdd,
 }
 public enum StringKey
 {
