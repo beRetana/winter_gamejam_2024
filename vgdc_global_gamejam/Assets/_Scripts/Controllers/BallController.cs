@@ -8,6 +8,14 @@ public class BallController : MonoBehaviour
 
     [SerializeField] private float _velocity;
 
+    private void OnEnable()
+    {
+        EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
+    }
+    private void OnDisable()
+    {
+        EventMessenger.StopListening(EventKey.DestroyBall, DestroyBall);
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();

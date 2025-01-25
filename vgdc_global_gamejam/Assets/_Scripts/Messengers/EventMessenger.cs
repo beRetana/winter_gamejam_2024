@@ -119,4 +119,5 @@ public enum EventKey
     RoundEnded,
     AddBall,
     BallCountUpdated,
+    DestroyBall,
 }

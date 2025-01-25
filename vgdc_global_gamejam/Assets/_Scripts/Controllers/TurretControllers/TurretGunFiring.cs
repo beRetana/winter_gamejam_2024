@@ -43,7 +43,7 @@ public class TurretGunFiring : MonoBehaviour
     }
     private void Shoot(InputAction.CallbackContext context)
     {
-        if (DataMessenger.GetBool(BoolKey.IsBallInPlay))
+        if (DataMessenger.GetBool(BoolKey.IsBallInPlay) || remainingBalls <= 0)
         {
             return;
         }
