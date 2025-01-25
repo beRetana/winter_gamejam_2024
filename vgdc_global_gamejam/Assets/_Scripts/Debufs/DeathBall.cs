@@ -2,21 +2,24 @@ using UnityEngine;
 
 public class DeathBall : IDebuf
 {
-    private GameObject ball;
-
     public void ApplyDebuff()
     {
-        
+        GameObject ball = DataMessenger.GetGameObject(GameObjectKey.PlayerBall);
+        DataMessenger.SetBool(BoolKey.IsBallInPlay, false);
+
+        EventMessenger.TriggerEvent(EventKey.RoundEnded);
+
+        Destroy(ball);
     }
 
     public void DisableDebuff()
     {
-        ball = null;
+
     }
 
     public void EnableDebuff()
     {
-        ball = GameObject.FindGameObjectWithTag("ball") as GameObject;
+        GetComponent<SpriteRenderer>().color = Color.red;
     }
 
 }

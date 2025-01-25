@@ -14,7 +14,7 @@ public class BasicPeg : MonoBehaviour, IPeg
 
     public void ApplyEffect()
     {
-        // SHould be called from Ball.cs after the score is updated.
+        
     }
 
     public int CalculateScore(int score)
