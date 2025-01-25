@@ -3,6 +3,7 @@ using UnityEngine;
 public class TurretGunRotation : MonoBehaviour
 {
     private Transform gunAxis;
+    
     private void Start()
     {
         gunAxis = transform.parent;

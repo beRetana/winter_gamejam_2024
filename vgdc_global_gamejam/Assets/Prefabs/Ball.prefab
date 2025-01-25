@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 4494585040587685329}
   - component: {fileID: 1671198712539091298}
   m_Layer: 0
-  m_Name: Peggle
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
