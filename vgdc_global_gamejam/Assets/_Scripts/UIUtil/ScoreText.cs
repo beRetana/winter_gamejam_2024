@@ -3,6 +3,7 @@ using UnityEngine;
 public class ScoreText : TMPUtil
 {
     private const string TEXT_PREFIX = "Score: ";
+    
     public override void Start()
     {
         base.Start();
