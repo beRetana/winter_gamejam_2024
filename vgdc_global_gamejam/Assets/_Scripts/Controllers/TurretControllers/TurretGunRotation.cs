@@ -6,7 +6,7 @@ public class TurretGunRotation : MonoBehaviour
     
     private void Start()
     {
-        gunAxis = transform.parent;
+        //gunAxis = transform.parent;
     }
     private void Update()
     {
@@ -15,6 +15,7 @@ public class TurretGunRotation : MonoBehaviour
     private void Rotate()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        gunAxis.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 90);
+        //gunAxis.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 180);
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position) * Quaternion.Euler(0, 0, 180);
     }
 }
