@@ -2,7 +2,8 @@
     "name": "ManagersAssembly",
     "rootNamespace": "",
     "references": [
-        "GUID:6bcdabba3e3ff2940ac27c559ff81375"
+        "GUID:6bcdabba3e3ff2940ac27c559ff81375",
+        "GUID:19d5d7421d41fd64e8a3d956ea2bf81b"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

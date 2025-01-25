@@ -381,7 +381,7 @@ public class DataMessenger : MonoBehaviour
 #region KeyEnums
 public enum BoolKey
 {
-
+    IsBallInPlay
 }
 public enum FloatKey
 {
@@ -391,6 +391,8 @@ public enum IntKey
 {
     CurrentScore,
     ScoreToAdd,
+    NewPegID,
+    RemainingBallCount,
 }
 public enum StringKey
 {
@@ -410,7 +412,7 @@ public enum QuaternionKey
 }
 public enum GameObjectKey
 {
-
+    NewPegObject
 }
 public enum ScriptableObjectKey
 {

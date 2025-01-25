@@ -115,4 +115,8 @@ public enum EventKey
 {
     AddScore,
     ScoreUpdated,
+    NewPegCreated,
+    RoundEnded,
+    AddBall,
+    BallCountUpdated,
 }
