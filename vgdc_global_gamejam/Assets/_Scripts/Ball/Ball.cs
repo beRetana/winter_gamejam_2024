@@ -7,8 +7,11 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out IPeg peg))
         {
-            peg.ApplyEffect();
             int updatedScore = peg.CalculateScore(DataMessenger.GetInt(IntKey.CurrentScore));
+            
+            // Apply effect should get called after the score is updated.
+            peg.ApplyEffect();
+
             DataMessenger.SetInt(IntKey.CurrentScore, updatedScore);
             EventMessenger.TriggerEvent(EventKey.ScoreUpdated);
         }

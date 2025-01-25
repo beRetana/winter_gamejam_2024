@@ -6,11 +6,17 @@ public class BasicPeg : MonoBehaviour, IPeg
 
     public void ApplyEffect()
     {
-        // Plays animation sounds and other effects
+        // SHould be called from Ball.cs after the score is updated.
+        OnDestroyPeg();
     }
 
     public int CalculateScore(int score)
     {
         return score + _scoredAdded;
+    }
+
+    private void OnDestroyPeg()
+    {
+        Destroy(gameObject);
     }
 }
