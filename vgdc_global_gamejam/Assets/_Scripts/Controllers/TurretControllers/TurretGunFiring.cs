@@ -9,8 +9,10 @@ public class TurretGunFiring : MonoBehaviour
     private PlayerControls _playerControls;
     private Transform _spawner;
 
-    [SerializeField] private int startingBalls;
-    private int remainingBalls;
+    [SerializeField] private int _startingBalls;
+    private int _remainingBalls;
+
+    private Transform _currentBallTransform;
 
     void Awake()
     {
@@ -19,10 +21,12 @@ public class TurretGunFiring : MonoBehaviour
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.AddBall, AddBall);
+        EventMessenger.StartListening(EventKey.RoundEnded, CreateBall);
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.AddBall, AddBall);
+        EventMessenger.StopListening(EventKey.RoundEnded, CreateBall);
     }
 
     void Start()
@@ -33,9 +37,18 @@ public class TurretGunFiring : MonoBehaviour
         _playerControls.Player.Shoot.Enable();
         _playerControls.Player.Shoot.performed += Shoot;
 
-        remainingBalls = startingBalls;
+        _remainingBalls = _startingBalls;
 
         UpdateBallCount(0);
+
+        CreateBall();
+    }
+    private void Update()
+    {
+        // Update direction
+        DataMessenger.SetVector2(Vector2Key.BulletDirection, 
+            (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized);
+
     }
     private void AddBall()
     {
@@ -43,23 +56,39 @@ public class TurretGunFiring : MonoBehaviour
     }
     private void Shoot(InputAction.CallbackContext context)
     {
-        if (DataMessenger.GetBool(BoolKey.IsBallInPlay))
+        if (_currentBallTransform == null)
         {
             return;
         }
-        DataMessenger.SetVector3(Vector3Key.BulletDirection, (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized);
-        Instantiate(_bulletPrefab, _spawner.transform.position, Quaternion.identity);
+
+        _currentBallTransform.position = _spawner.transform.position;
+        _currentBallTransform.gameObject.SetActive(true);
+        _currentBallTransform = null;
+
+        EventMessenger.TriggerEvent(EventKey.ShootBall);
 
         UpdateBallCount(-1);
     }
 
+    /// <summary>
+    /// Create ball but don't shoot yet.
+    /// </summary>
+    private void CreateBall()
+    {
+        if (DataMessenger.GetBool(BoolKey.IsBallInPlay) || _remainingBalls <= 0)
+        {
+            return;
+        }
+        _currentBallTransform = Instantiate(_bulletPrefab, _spawner.transform.position, Quaternion.identity).transform;
+        _currentBallTransform.gameObject.SetActive(false);
+    }
 
     /// <param name="operand">1 to add, -1 to remove.</param>
     private void UpdateBallCount(int operand)
     {
-        remainingBalls += operand;
+        _remainingBalls += operand;
 
-        DataMessenger.SetInt(IntKey.RemainingBallCount, remainingBalls);
+        DataMessenger.SetInt(IntKey.RemainingBallCount, _remainingBalls);
         EventMessenger.TriggerEvent(EventKey.BallCountUpdated);
     }
 }

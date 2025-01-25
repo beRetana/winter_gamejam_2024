@@ -4,17 +4,31 @@ public class BallController : MonoBehaviour
 {
     private const float MIN_Y = -6;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D _rigidbody;
 
     [SerializeField] private float _velocity;
 
+    private void Awake()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+
+        DataMessenger.SetFloat(FloatKey.CurrentBallSpeed, _velocity);
+        DataMessenger.SetFloat(FloatKey.CurrentBallGravityScale, _rigidbody.gravityScale);
+        EventMessenger.TriggerEvent(EventKey.BallInfoUpdated);
+    }
+    private void OnEnable()
+    {
+        EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
+        EventMessenger.StartListening(EventKey.ShootBall, AddForce);
+    }
+    private void OnDisable()
+    {
+        EventMessenger.StopListening(EventKey.DestroyBall, DestroyBall);
+        EventMessenger.StopListening(EventKey.ShootBall, AddForce);
+    }
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        AddForce();
-
-        DataMessenger.SetBool(BoolKey.IsBallInPlay, true);
+        //AddForce();
     }
     private void Update()
     {
@@ -25,7 +39,9 @@ public class BallController : MonoBehaviour
     }
     private void AddForce()
     {
-        rb.AddForce(DataMessenger.GetVector3(Vector3Key.BulletDirection) * _velocity, ForceMode2D.Impulse);
+        _rigidbody.AddForce(DataMessenger.GetVector2(Vector2Key.BulletDirection) * _velocity, ForceMode2D.Impulse);
+
+        DataMessenger.SetBool(BoolKey.IsBallInPlay, true);
     }
     private void DestroyBall()
     {
