@@ -1,8 +1,8 @@
 {
-    "name": "ManagersAssembly",
+    "name": "GeneralAssembly",
     "rootNamespace": "",
     "references": [
-        "GUID:6bcdabba3e3ff2940ac27c559ff81375"
+        "MessengersAssembly"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

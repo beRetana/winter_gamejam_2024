@@ -1,10 +1,10 @@
 {
-    "name": "ManagersAssembly",
+    "name": "EditorAssembly",
     "rootNamespace": "",
-    "references": [
-        "GUID:6bcdabba3e3ff2940ac27c559ff81375"
+    "references": [],
+    "includePlatforms": [
+        "Editor"
     ],
-    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
