@@ -12,7 +12,7 @@ public class TurretGunFiring : MonoBehaviour
     }
     private void Shoot()
     {
-        DataMessenger.SetVector3(Vector3Key.BulletDirection, Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+        DataMessenger.SetVector3(Vector3Key.BulletDirection, (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized);
         Instantiate(bulletPrefab);
     }
 }
