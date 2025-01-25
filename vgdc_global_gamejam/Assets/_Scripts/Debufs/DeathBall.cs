@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DeathBall : IDebuf
+public class DeathBall : MonoBehaviour, IDebuf
 {
     public void ApplyDebuff()
     {
