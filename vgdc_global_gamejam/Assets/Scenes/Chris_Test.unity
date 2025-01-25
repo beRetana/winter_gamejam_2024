@@ -1112,10 +1112,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Back Hole
       objectReference: {fileID: 0}
-    - target: {fileID: 2630590590584056663, guid: dd73bced118044d44b2f197127f53363, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

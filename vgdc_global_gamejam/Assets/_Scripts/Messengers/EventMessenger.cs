@@ -122,4 +122,6 @@ public enum EventKey
     DestroyBall,
     ShootBall,
     BallInfoUpdated,
+    ApplyDebuff,
+    ApplyPegDebug,
 }
