@@ -401,7 +401,7 @@ public enum StringListKey
 }
 public enum Vector3Key
 {
-
+    BulletDirection,
 }
 public enum QuaternionKey
 {
