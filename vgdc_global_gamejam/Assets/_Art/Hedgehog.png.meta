@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hedgehog_0: 565521202965635644
+      Hedgehog_1: 7458230739576329092
+      Hedgehog_2: 5891391668469140917
+      Hedgehog_3: 74397049750687282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
