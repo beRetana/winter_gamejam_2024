@@ -20,15 +20,9 @@ public class EventMessenger : MonoBehaviour
         else
         {
             instance = this;
+            eventDictionary = new();
         }
-    }
 
-    void Init()
-    {
-        if (eventDictionary == null)
-        {
-            eventDictionary = new Dictionary<string, UnityEvent>();
-        }
     }
 
     /// <summary>
@@ -119,5 +113,6 @@ public class EventMessenger : MonoBehaviour
 
 public enum EventKey
 {
-
+    AddScore,
+    ScoreUpdated,
 }
