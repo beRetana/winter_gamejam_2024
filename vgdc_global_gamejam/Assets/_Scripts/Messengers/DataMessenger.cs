@@ -11,6 +11,7 @@ public class DataMessenger : MonoBehaviour
     private static Dictionary<string, int> ints;
     private static Dictionary<string, string> strings;
     private static Dictionary<string, List<string>> stringLists;
+    private static Dictionary<string, Vector2> vector2s;
     private static Dictionary<string, Vector3> vector3s;
     private static Dictionary<string, Quaternion> quaternions;
     private static Dictionary<string, GameObject> gameObjects;
@@ -28,6 +29,7 @@ public class DataMessenger : MonoBehaviour
         ints = new Dictionary<string, int>();
         strings = new Dictionary<string, string>();
         stringLists = new Dictionary<string, List<string>>();
+        vector2s = new Dictionary<string, Vector2>();
         vector3s = new Dictionary<string, Vector3>();
         quaternions = new Dictionary<string, Quaternion>();
         gameObjects = new Dictionary<string, GameObject>();
@@ -377,6 +379,30 @@ public class DataMessenger : MonoBehaviour
         SetVector3(key.ToString(), value);
     }
     #endregion Vector3
+    #region Vector2
+    public static Vector3 GetVector2(string key)
+    {
+        if (!vector2s.TryGetValue(key, out Vector2 v))
+        {
+            vector2s[key] = DEFAULT_VECTOR;
+            return vector2s[key];
+        }
+        return v;
+    }
+    public static Vector3 GetVector2(Vector2Key key)
+    {
+        return GetVector2(key.ToString());
+    }
+
+    public static void SetVector2(string key, Vector2 value)
+    {
+        vector2s[key] = value;
+    }
+    public static void SetVector2(Vector2Key key, Vector2 value)
+    {
+        SetVector2(key.ToString(), value);
+    }
+    #endregion Vector2
 }
 #region KeyEnums
 public enum BoolKey
@@ -385,7 +411,8 @@ public enum BoolKey
 }
 public enum FloatKey
 {
-    
+    CurrentBallSpeed,
+    CurrentBallGravityScale
 }
 public enum IntKey
 {
@@ -402,9 +429,12 @@ public enum StringListKey
 {
 
 }
-public enum Vector3Key
+public enum Vector2Key
 {
     BulletDirection,
+}
+public enum Vector3Key
+{
 }
 public enum QuaternionKey
 {
