@@ -35,4 +35,16 @@ public class BallController : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IPeg>() != null)
+        {
+            int _currentScore = DataMessenger.GetInt(IntKey.CurrentScore);
+            _currentScore = collision.gameObject.GetComponent<IPeg>().CalculateScore(_currentScore);
+            DataMessenger.SetInt(IntKey.CurrentScore, _currentScore);
+            EventMessenger.TriggerEvent(EventKey.ScoreUpdated);
+            collision.gameObject.GetComponent<IPeg>().ApplyEffect();
+        }
+    }
 }
