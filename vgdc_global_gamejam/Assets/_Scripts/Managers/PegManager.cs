@@ -40,6 +40,7 @@ public class PegManager : MonoBehaviour
         {
 
         }
+    }
 
     public int GetBluePegSize()
     {
