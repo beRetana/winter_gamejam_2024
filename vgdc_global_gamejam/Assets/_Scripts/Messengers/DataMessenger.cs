@@ -412,7 +412,9 @@ public enum BoolKey
 public enum FloatKey
 {
     CurrentBallSpeed,
-    CurrentBallGravityScale
+    CurrentBallGravityScale,
+    BallMassMultiplier,
+    CurrentBallMass
 }
 public enum IntKey
 {

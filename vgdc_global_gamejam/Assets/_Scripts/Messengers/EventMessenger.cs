@@ -126,4 +126,6 @@ public enum EventKey
     ApplyPegDebuff,
     ApplyBoardDebuff,
     TiltCamera,
+    ApplyShotDebuff,
+    UpdateBallDebuffs,
 }

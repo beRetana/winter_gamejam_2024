@@ -30,5 +30,7 @@ public class BoardManager : MonoBehaviour
                 TiltBoard();
                 break;
         }
+
+        Debug.Log("Applied Board Debuff: " + debuffType);
     }
 }
