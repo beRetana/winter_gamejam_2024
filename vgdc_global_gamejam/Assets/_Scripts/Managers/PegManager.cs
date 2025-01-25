@@ -16,6 +16,7 @@ public class PegManager : MonoBehaviour
         EventMessenger.StartListening(EventKey.NewPegCreated, NewPegCreated);
 
         EventMessenger.StartListening(EventKey.ApplyPegDebuff, ApplyDebuff);
+        DataMessenger.SetGameObject(GameObjectKey.PegManager, gameObject);
     }
     private void OnDisable()
     {
@@ -39,5 +40,9 @@ public class PegManager : MonoBehaviour
         {
 
         }
+
+    public int GetBluePegSize()
+    {
+        return currentPegs.Count;
     }
 }

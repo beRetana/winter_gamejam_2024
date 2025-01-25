@@ -1,10 +1,8 @@
 {
-    "name": "ControllersAssembly",
+    "name": "Debufs",
     "rootNamespace": "",
     "references": [
-        "GUID:6bcdabba3e3ff2940ac27c559ff81375",
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:ae0f459b17d996d46af7a664b16bf035"
+        "GUID:6bcdabba3e3ff2940ac27c559ff81375"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

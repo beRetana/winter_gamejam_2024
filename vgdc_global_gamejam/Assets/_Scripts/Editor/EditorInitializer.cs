@@ -23,9 +23,9 @@ public class EditorInitializer
     static List<string> extraScenesToLoad = new List<string>
     {
         //"mary", // "whatever this scene is"
-        //"Game_Brandon" // "whatever this scne actually is"
+        "Game_Brandon" // "whatever this scne actually is"
         //"Game" // Turret Testing
-        "Chris_Test",
+        //"Chris_Test",
     };
 
     static EditorInitializer()

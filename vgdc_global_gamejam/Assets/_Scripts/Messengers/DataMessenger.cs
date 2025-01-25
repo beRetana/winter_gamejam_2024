@@ -444,7 +444,9 @@ public enum QuaternionKey
 }
 public enum GameObjectKey
 {
-    NewPegObject
+    NewPegObject,
+    PlayerBall,
+    PegManager
 }
 public enum ScriptableObjectKey
 {

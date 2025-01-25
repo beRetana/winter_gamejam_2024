@@ -23,6 +23,7 @@ public class BallController : MonoBehaviour
         EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StartListening(EventKey.ShootBall, AddForce);
         EventMessenger.StartListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
+        DataMessenger.SetGameObject(GameObjectKey.PlayerBall, gameObject);
     }
     private void OnDisable()
     {
@@ -66,5 +67,17 @@ public class BallController : MonoBehaviour
         EventMessenger.TriggerEvent(EventKey.RoundEnded);
 
         Destroy(gameObject);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IPeg>() != null)
+        {
+            int _currentScore = DataMessenger.GetInt(IntKey.CurrentScore);
+            _currentScore = collision.gameObject.GetComponent<IPeg>().CalculateScore(_currentScore);
+            DataMessenger.SetInt(IntKey.CurrentScore, _currentScore);
+            EventMessenger.TriggerEvent(EventKey.ScoreUpdated);
+            collision.gameObject.GetComponent<IPeg>().ApplyEffect();
+        }
     }
 }
