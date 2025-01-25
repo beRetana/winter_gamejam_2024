@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using static DebuffManager;
 
 public class PegManager : MonoBehaviour
 {
@@ -16,13 +15,13 @@ public class PegManager : MonoBehaviour
     {
         EventMessenger.StartListening(EventKey.NewPegCreated, NewPegCreated);
 
-        EventMessenger.StartListening(EventKey.ApplyPegDebug, ApplyDebuff);
+        EventMessenger.StartListening(EventKey.ApplyPegDebuff, ApplyDebuff);
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.NewPegCreated, NewPegCreated);
 
-        EventMessenger.StopListening(EventKey.ApplyPegDebug, ApplyDebuff);
+        EventMessenger.StopListening(EventKey.ApplyPegDebuff, ApplyDebuff);
     }
     private void NewPegCreated()
     {
@@ -34,6 +33,11 @@ public class PegManager : MonoBehaviour
     {
         PegDebuffTypes debuffType = (PegDebuffTypes)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffTypes)).Length);
 
+        float debuffChange = UnityEngine.Random.Range(0, 1);
 
+        foreach (var par in currentPegs)
+        {
+
+        }
     }
 }

@@ -123,5 +123,7 @@ public enum EventKey
     ShootBall,
     BallInfoUpdated,
     ApplyDebuff,
-    ApplyPegDebug,
+    ApplyPegDebuff,
+    ApplyBoardDebuff,
+    TiltCamera,
 }
