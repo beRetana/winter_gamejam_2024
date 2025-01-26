@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: c9ebef527bbad524a9b3aa7f81791675
+guid: 2946b771bce5a5448bddc1d778fe4308
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7275727417775399954
-    second: Hedge_Hog_Icon1_0
+      213: -8720073236324998160
+    second: bottom__top 1_0
+  - first:
+      213: 2215508483937357541
+    second: bottom__top 1_1
+  - first:
+      213: -8562138674722151198
+    second: bottom__top 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hedge_Hog_Icon1_0
+      name: bottom__top 1_0
       rect:
         serializedVersion: 2
-        x: 754
-        y: 77
-        width: 2004
-        height: 1872
+        x: 0
+        y: 1224
+        width: 1028
+        height: 416
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eeb5de4467c670b90800000000000000
-      internalID: -7275727417775399954
+      spriteID: 0f3257da7931cf680800000000000000
+      internalID: -8720073236324998160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom__top 1_1
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1242
+        width: 1038
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee43f55a311fbe10800000000000000
+      internalID: 2215508483937357541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bottom__top 1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2360
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e46d8f4d3c2d2980800000000000000
+      internalID: -8562138674722151198
       vertices: []
       indices: 
       edges: []
@@ -160,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Hedge_Hog_Icon1_0: -7275727417775399954
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

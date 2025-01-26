@@ -70,20 +70,20 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -401,7 +401,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -410,7 +410,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Loop_0: 3852229755048302361
+      Loop_1: 6643615502806517533
+      Loop_10: 6385002369117303699
+      Loop_2: 3001474604536255837
+      Loop_3: -8561011381421929169
+      Loop_4: 6595816287263863625
+      Loop_5: 9175872346334987602
+      Loop_6: -393350663793084805
+      Loop_7: -3416372601922878134
+      Loop_8: -3637356072712333593
+      Loop_9: 2725603925264906214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
