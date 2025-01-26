@@ -21,9 +21,9 @@ public class Peg : MonoBehaviour
     {
         pegId = ++ID;
 
-        DataMessenger.SetInt(IntKey.NewPegID, pegId);
-        DataMessenger.SetGameObject(GameObjectKey.NewPegObject, gameObject);
-        EventMessenger.TriggerEvent(EventKey.NewPegBlueCreated);
+        DataMessenger.SetInt(IntKey.NewBluePegID, pegId);
+        DataMessenger.SetGameObject(GameObjectKey.NewBluePegObject, gameObject);
+        EventMessenger.TriggerEvent(EventKey.NewBluePegCreated);
     }
     private void Hit()
     {

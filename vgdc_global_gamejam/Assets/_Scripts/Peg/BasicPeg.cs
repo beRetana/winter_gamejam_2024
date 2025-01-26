@@ -1,5 +1,4 @@
 using System.Collections;
-using Codice.CM.Common;
 using UnityEngine;
 
 public class BasicPeg : MonoBehaviour, IPeg
@@ -7,24 +6,36 @@ public class BasicPeg : MonoBehaviour, IPeg
     [SerializeField] protected int _scoredAdded;
     [SerializeField] protected float _timeOn;
 
+    private static int ID;
+
+    protected int _myId;
+
+    protected virtual void Start()
+    {
+        EventMessenger.StartListening(EventKey.RoundEnded, OnDestroyPeg);
+
+        ID++;
+
+        _myId = ID;
+
+        DataMessenger.SetInt(IntKey.NewBluePegID, _myId);
+        DataMessenger.SetGameObject(GameObjectKey.NewBluePegObject, gameObject);
+        EventMessenger.TriggerEvent(EventKey.NewBluePegCreated);
+    }
 
     protected bool _hasBeenHit;
     protected bool _effecthasBeenApplied;
     protected IDebuf _debuf;
-
-    void Start(){
-        EventMessenger.StartListening(EventKey.RoundEnded, OnDestroyPeg);
-    }
 
     public virtual void ApplyEffect()
     {
         
     }
 
-    public void ApplyDebuf(IDebuf debuf)
+    public void ApplyDebuf()
     {
         _debuf?.DisableDebuff();
-        _debuf = debuf;
+        _debuf = GetComponent<IDebuf>();
         _debuf?.EnableDebuff();
     }
 
@@ -53,6 +64,8 @@ public class BasicPeg : MonoBehaviour, IPeg
         if (_hasBeenHit)
         {
             ApplyPopEffect();
+            DataMessenger.SetInt(IntKey.DestroyedBluePegID, _myId);
+            EventMessenger.TriggerEvent(EventKey.DestroyedBluePeg);
             Destroy(gameObject);
         }
     }

@@ -421,7 +421,10 @@ public enum IntKey
 {
     CurrentScore,
     ScoreToAdd,
-    NewPegID,
+    NewBluePegID,
+    NewPointPegID,
+    DestroyedPointPegID,
+    DestroyedBluePegID,
     RemainingBallCount,
     DebuffSelection,
     DebuffEnumID,
@@ -448,7 +451,8 @@ public enum QuaternionKey
 }
 public enum GameObjectKey
 {
-    NewPegObject,
+    NewBluePegObject,
+    NewPointPegObject,
     PlayerBall,
     PegManager
 }

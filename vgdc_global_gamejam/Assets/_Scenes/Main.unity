@@ -480,6 +480,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94aa48d2d0c209144ad35fc2ccfbe5f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debufFake:
+    debuffType: 0
+    debuffChange: 1
+  debufNoBounce:
+    debuffType: 1
+    debuffChange: 1
+  debufDeath:
+    debuffType: 2
+    debuffChange: 1
+  debufPopScream:
+    debuffType: 3
+    debuffChange: 1
 --- !u!1 &946613469
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,55 +1,112 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using Mono.Cecil.Cil;
 using UnityEngine;
-using static BoardManager;
 
 public class PegManager : MonoBehaviour
 {
+    [SerializeField] private PegDebuffStats debufFake;
+    [SerializeField] private PegDebuffStats debufNoBounce;
+    [SerializeField] private PegDebuffStats debufDeath;
+    [SerializeField] private PegDebuffStats debufPopScream;
+
     public enum PegDebuffType
     {
-        Fake, Sticky, DoubleSize, Pop, ReduceBallMass, IncreaseBallMass
+        Fake, NoBounce, Death, PopScream
     }
 
-    private Dictionary<int, Peg> currentBluePegs = new();
-    private Dictionary<int, Peg> currentOrangePegs = new();
+    [Serializable]
+    public struct PegDebuffStats
+    {
+        public PegDebuffType debuffType;
+        public float debuffChange;
+    }
+
+    private Dictionary<int, BasicPeg> currentBluePegs = new();
+    private Dictionary<int, PointPeg> currentPointPegs = new();
 
     private void OnEnable()
     {
-        EventMessenger.StartListening(EventKey.NewPegBlueCreated, NewPegBlueCreated);
-        EventMessenger.StartListening(EventKey.NewPegOrangeCreated, NewPegOrangeCreated);
+        EventMessenger.StartListening(EventKey.NewBluePegCreated, NewBluePegCreated);
+        EventMessenger.StartListening(EventKey.NewPointPegCreated, NewPointPegCreated);
+        EventMessenger.StartListening(EventKey.DestroyedBluePeg, OnDestroyedBluePeg);
+        EventMessenger.StartListening(EventKey.DestroyedPointPeg, OnDestroyedPointPeg);
 
         EventMessenger.StartListening(EventKey.ApplyPegDebuff, ApplyDebuff);
         DataMessenger.SetGameObject(GameObjectKey.PegManager, gameObject);
     }
+
     private void OnDisable()
     {
-        EventMessenger.StopListening(EventKey.NewPegBlueCreated, NewPegBlueCreated);
-        EventMessenger.StopListening(EventKey.NewPegOrangeCreated, NewPegBlueCreated);
+        EventMessenger.StopListening(EventKey.NewBluePegCreated, NewBluePegCreated);
+        EventMessenger.StopListening(EventKey.NewPointPegCreated, NewBluePegCreated);
 
         EventMessenger.StopListening(EventKey.ApplyPegDebuff, ApplyDebuff);
     }
-    private void NewPegBlueCreated()
+
+    private void NewBluePegCreated()
     {
         // Add peg to dictionary
-        currentBluePegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
-            DataMessenger.GetGameObject(GameObjectKey.NewPegObject).GetComponent<Peg>());
+        currentBluePegs.Add(DataMessenger.GetInt(IntKey.NewBluePegID), 
+            DataMessenger.GetGameObject(GameObjectKey.NewBluePegObject).GetComponent<BasicPeg>());
     }
-    private void NewPegOrangeCreated()
+
+    private void NewPointPegCreated()
     {
         // Add peg to dictionary
-        currentOrangePegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
-            DataMessenger.GetGameObject(GameObjectKey.NewPegObject).GetComponent<Peg>());
+        currentPointPegs.Add(DataMessenger.GetInt(IntKey.NewPointPegID), 
+            DataMessenger.GetGameObject(GameObjectKey.NewPointPegObject).GetComponent<PointPeg>());
     }
+
+    private void OnDestroyedPointPeg()
+    {
+        currentPointPegs.Remove(DataMessenger.GetInt(IntKey.DestroyedPointPegID));
+    }
+
+    private void OnDestroyedBluePeg()
+    {
+        currentBluePegs.Remove(DataMessenger.GetInt(IntKey.DestroyedBluePegID));
+    }
+
     private void ApplyDebuff()
     {
         PegDebuffType debuffType = (PegDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
         //(PegDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffType)).Length);
 
-        float debuffChange = UnityEngine.Random.Range(0, 1);
-
-        foreach (var par in currentBluePegs)
+        foreach (BasicPeg peg in currentBluePegs.Values)
         {
-            
+
+            switch (debuffType)
+            {
+                case PegDebuffType.Fake:
+                    peg.gameObject.AddComponent<FakePeg>();
+                    CalculateChance(peg, debufFake.debuffChange);
+                    break;
+                case PegDebuffType.NoBounce:
+                    peg.gameObject.AddComponent<DebufNoBounce>();
+                    CalculateChance(peg, debufNoBounce.debuffChange);
+                    break;
+                case PegDebuffType.Death:
+                    peg.gameObject.AddComponent<DeathBall>();
+                    CalculateChance(peg, debufDeath.debuffChange);
+                    break;
+                case PegDebuffType.PopScream:
+                    //par.Value.SetPopScream(debufPopScream.debuffChange);
+                    UnityEngine.Debug.Log("PopScream");
+                    break;
+            }
+        }
+    }
+    
+    private void CalculateChance(BasicPeg peg ,float chance)
+    {
+        float rand = UnityEngine.Random.Range(0.0f, 1.0f);
+
+        if (rand <= chance)
+        {
+            UnityEngine.Debug.Log("Debuff Applied To: " + peg.gameObject.name);
+            peg.ApplyDebuf();
         }
     }
 

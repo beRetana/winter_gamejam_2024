@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6807100933690042966}
   - component: {fileID: 3746181635388342479}
   m_Layer: 0
-  m_Name: Basic_Peg_Circle
+  m_Name: BluePeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

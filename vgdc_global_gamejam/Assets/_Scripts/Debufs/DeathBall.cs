@@ -16,13 +16,13 @@ public class DeathBall : MonoBehaviour, IDebuf
 
     public void DisableDebuff()
     {
-        GetComponent<SpriteRenderer>().color = _defaultColor;
+        GetComponentInChildren<SpriteRenderer>().color = _defaultColor;
     }
 
     public void EnableDebuff()
     {
-        _defaultColor = GetComponent<SpriteRenderer>().color;
-        GetComponent<SpriteRenderer>().color = Color.red;
+        _defaultColor = GetComponentInChildren<SpriteRenderer>().color;
+        GetComponentInChildren<SpriteRenderer>().color = Color.red;
     }
 
 }

@@ -20,6 +20,7 @@ public class DebuffManager : MonoBehaviour
     {
         Peg, Board, Shot
     }
+
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.ApplyDebuff, ApplyDebuff);
@@ -32,6 +33,8 @@ public class DebuffManager : MonoBehaviour
         EventMessenger.StopListening(EventKey.ShowDebuffSelection, ShowDebuffSelection);
         EventMessenger.StopListening(EventKey.DebuffSelected, DebuffSelected);
     }
+
+    // Displays the selection of curses to choose from
     private void ShowDebuffSelection()
     {
         DataMessenger.SetBool(BoolKey.IsGameActive, false);
@@ -54,6 +57,8 @@ public class DebuffManager : MonoBehaviour
                 " " + info.Item3;
         }
     }
+
+    // Destroys the selection menu for curses and updates the value fo the curse selected
     private void DebuffSelected()
     {
         int debuffSelection = DataMessenger.GetInt(IntKey.DebuffSelection);
@@ -62,12 +67,15 @@ public class DebuffManager : MonoBehaviour
         switch (_debuffTypes[debuffSelection].Item1)
         {
             case DebuffType.Peg:
+                // Trigger the event for applying a peg debuff (Peg Manager)
                 eventKey = EventKey.ApplyPegDebuff;
                 break;
             case DebuffType.Board:
+                // Trigger the event for Tilting the board (Board Manager)
                 eventKey = EventKey.ApplyBoardDebuff;
                 break;
             case DebuffType.Shot:
+                // Trigger the event for changing the score multiplier (Shot Manager)
                 eventKey = EventKey.ApplyShotDebuff;
                 break;
             default:
@@ -75,17 +83,22 @@ public class DebuffManager : MonoBehaviour
                 eventKey = EventKey.ApplyPegDebuff;
                 break;
         }
+
         DataMessenger.SetInt(IntKey.DebuffEnumID, _debuffTypes[debuffSelection].Item2);
+        // Trigger the event
         EventMessenger.TriggerEvent(eventKey);
 
         DataMessenger.SetBool(BoolKey.IsGameActive, true);
 
         Destroy(_debuffSelectionObject);
     }
+
+    // Returns a random debuff category (peg, shot, game), its specific type and name
     private (DebuffType, int, string) GetRandomDebuff()
     {
         float rand = UnityEngine.Random.Range(0.0f, 1.0f);
         DebuffType debuffType = DebuffType.Peg;
+
         if (rand > DEBUFF_SHOT_CHANCE)
         {
             debuffType = DebuffType.Shot;
@@ -94,8 +107,10 @@ public class DebuffManager : MonoBehaviour
         {
             debuffType = DebuffType.Board;
         }
+
         int specificDebuffType;
         string debuffTypeName;
+
         switch (debuffType)
         {
             default:
@@ -126,11 +141,15 @@ public class DebuffManager : MonoBehaviour
         }
         return (debuffType, specificDebuffType, debuffTypeName);
     }
+    
+    // Chooses the Category of debuff to apply
+    // What is the difference between this and the GetRandomDebuff() method?
     private void ApplyDebuff()
     {
         // Choose top-level debuff type
         float rand = UnityEngine.Random.Range(0.0f, 1.0f);
         DebuffType debuffType = DebuffType.Peg;
+
         if (rand > DEBUFF_SHOT_CHANCE)
         {
             debuffType = DebuffType.Shot;

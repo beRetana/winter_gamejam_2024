@@ -115,8 +115,8 @@ public enum EventKey
 {
     AddScore,
     ScoreUpdated,
-    NewPegBlueCreated,
-    NewPegOrangeCreated,
+    NewBluePegCreated,
+    NewPointPegCreated,
     RoundEnded,
     AddBall,
     BallCountUpdated,
@@ -134,4 +134,6 @@ public enum EventKey
     PointPegCaught,
     WonGame,
     LostGame,
+    DestroyedBluePeg,
+    DestroyedPointPeg
 }
