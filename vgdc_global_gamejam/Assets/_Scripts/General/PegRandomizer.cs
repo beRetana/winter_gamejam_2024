@@ -6,8 +6,7 @@ public class PegRandomizer : MonoBehaviour
 {
     private static readonly System.Random rng = new();
 
-    [Header("Peg Info")]
-    [SerializeField] private int _pointPegCount; // How many point pegs there should be
+    private int _pointPegCount; // How many point pegs there should be
 
     [Header("Prefabs")]
     [SerializeField] private GameObject _pointPegPrefab;
@@ -36,6 +35,8 @@ public class PegRandomizer : MonoBehaviour
     private void Start()
     {
         SceneManager.SetActiveScene(gameObject.scene);
+
+        _pointPegCount = DataMessenger.GetInt(IntKey.StartingPointPegCount);
 
         ChoosePegCreation();
     }

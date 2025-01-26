@@ -9,6 +9,7 @@ public class DeathBall : MonoBehaviour, IDebuf
         GameObject ball = DataMessenger.GetGameObject(GameObjectKey.PlayerBall);
         DataMessenger.SetBool(BoolKey.IsBallInPlay, false);
 
+        EventMessenger.TriggerEvent(EventKey.DestroyPegs);
         EventMessenger.TriggerEvent(EventKey.RoundEnded);
 
         Destroy(ball);

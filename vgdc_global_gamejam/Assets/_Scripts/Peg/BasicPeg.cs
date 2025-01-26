@@ -16,7 +16,7 @@ public class BasicPeg : MonoBehaviour, IPeg
 
     protected virtual void Start()
     {
-        EventMessenger.StartListening(EventKey.RoundEnded, OnDestroyPeg);
+        EventMessenger.StartListening(EventKey.DestroyPegs, OnDestroyPeg);
 
         ID++;
 

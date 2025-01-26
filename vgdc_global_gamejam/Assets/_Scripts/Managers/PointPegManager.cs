@@ -4,24 +4,30 @@ using UnityEngine;
 public class PointPegManager : MonoBehaviour
 {
     [SerializeField] private int _pointPegMaxCount = 15;
-    [SerializeField] private int _pointPegCurse = 3;
+    [SerializeField] private int _pointPegCurseInterval = 3;
 
     private int _pointPegMultipliyer;
 
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.RoundEnded, OnPointPegCaught);
-        EventMessenger.StartListening(EventKey.RestartGame, RestartGame);
+        EventMessenger.StartListening(EventKey.RestartGame, ResetInfo);
 
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.RoundEnded, OnPointPegCaught);
-        EventMessenger.StopListening(EventKey.RestartGame, RestartGame);
+        EventMessenger.StopListening(EventKey.RestartGame, ResetInfo);
     }
-    private void RestartGame()
+    private void Start()
     {
-        _pointPegMultipliyer = 0;
+        DataMessenger.SetInt(IntKey.StartingPointPegCount, _pointPegMaxCount);
+
+        ResetInfo();
+    }
+    private void ResetInfo()
+    {
+        _pointPegMultipliyer = 1;
     }
     private void OnPointPegCaught()
     {
@@ -34,10 +40,10 @@ public class PointPegManager : MonoBehaviour
             EventMessenger.TriggerEvent(EventKey.WonGame);
             return;
         }
-        if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 
+        if (pointPegCount >= _pointPegCurseInterval * _pointPegMultipliyer && DataMessenger.GetBool(BoolKey.IsGameActive)) 
         {
             EventMessenger.TriggerEvent(EventKey.ShowDebuffSelection);
-            _pointPegMultipliyer++;
+            _pointPegMultipliyer = pointPegCount / _pointPegCurseInterval + 1;
         }
     }
 }

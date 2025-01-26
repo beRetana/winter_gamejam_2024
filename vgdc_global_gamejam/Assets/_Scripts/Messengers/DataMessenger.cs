@@ -429,6 +429,7 @@ public enum IntKey
     DebuffSelection,
     DebuffEnumID,
     PointPegCount,
+    StartingPointPegCount,
 }
 public enum StringKey
 {

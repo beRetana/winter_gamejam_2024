@@ -139,4 +139,5 @@ public enum EventKey
     FlashCurseOfRa,
     RestartGame,
     ResetDebuffs,
+    DestroyPegs,
 }
