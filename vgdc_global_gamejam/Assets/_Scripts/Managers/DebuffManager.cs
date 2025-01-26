@@ -104,7 +104,7 @@ public class DebuffManager : MonoBehaviour
 
         if (rand < DEBUFF_PEG_CHANCE)
         {
-            debuffType = DebuffType.Shot;
+            debuffType = DebuffType.Peg;
         }
         else if (rand < DEBUFF_BOARD_CHANCE)
         {
