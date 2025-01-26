@@ -8,24 +8,28 @@ public class BallController : MonoBehaviour
 
     [SerializeField] private float _velocity;
 
+    private float originalMass;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
 
-        DataMessenger.SetFloat(FloatKey.CurrentBallSpeed, _velocity);
-        DataMessenger.SetFloat(FloatKey.CurrentBallGravityScale, _rigidbody.gravityScale);
-        EventMessenger.TriggerEvent(EventKey.BallInfoUpdated);
+        originalMass = _rigidbody.mass;
+
+        UpdateDebuffs();
     }
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StartListening(EventKey.ShootBall, AddForce);
+        EventMessenger.StartListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
         DataMessenger.SetGameObject(GameObjectKey.PlayerBall, gameObject);
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StopListening(EventKey.ShootBall, AddForce);
+        EventMessenger.StopListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
     }
     private void Start()
     {
@@ -37,6 +41,18 @@ public class BallController : MonoBehaviour
         {
             DestroyBall();
         }
+    }
+    private void UpdateBallInfo()
+    {
+        DataMessenger.SetFloat(FloatKey.CurrentBallSpeed, _velocity);
+        DataMessenger.SetFloat(FloatKey.CurrentBallGravityScale, _rigidbody.gravityScale);
+        DataMessenger.SetFloat(FloatKey.CurrentBallMass, _rigidbody.mass);
+        EventMessenger.TriggerEvent(EventKey.BallInfoUpdated);
+    }
+    private void UpdateDebuffs()
+    {
+        _rigidbody.mass = originalMass * DataMessenger.GetFloat(FloatKey.BallMassMultiplier);
+        UpdateBallInfo();
     }
     private void AddForce()
     {

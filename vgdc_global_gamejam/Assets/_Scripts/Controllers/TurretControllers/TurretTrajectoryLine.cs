@@ -14,6 +14,7 @@ public class TurretTrajectoryLine : MonoBehaviour
 
     private float _projectileSpeed;
     private float _projectileGravity;
+    private float _projectileMass;
 
     private const float TIME_CURVE_ADDITION = 0.5f;
 
@@ -47,7 +48,8 @@ public class TurretTrajectoryLine : MonoBehaviour
         {
             float timeOffset = (i * Time.fixedDeltaTime * _curveLength);
 
-            Vector2 gravityOffset = TIME_CURVE_ADDITION * _projectileGravity * Mathf.Pow(timeOffset, 2) * Physics2D.gravity;
+            Vector2 gravityOffset = TIME_CURVE_ADDITION * _projectileGravity * Mathf.Pow(timeOffset, 2) *
+                _projectileMass * Physics2D.gravity;
 
             _segments[i] = _segments[0] + startVelocity * timeOffset + gravityOffset;
             _lineRenderer.SetPosition(i, _segments[i]);
@@ -57,5 +59,6 @@ public class TurretTrajectoryLine : MonoBehaviour
     {
         _projectileSpeed = DataMessenger.GetFloat(FloatKey.CurrentBallSpeed);
         _projectileGravity = DataMessenger.GetFloat(FloatKey.CurrentBallGravityScale);
+        _projectileMass = DataMessenger.GetFloat(FloatKey.CurrentBallMass);
     }
 }

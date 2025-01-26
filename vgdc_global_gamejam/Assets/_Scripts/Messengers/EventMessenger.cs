@@ -122,4 +122,12 @@ public enum EventKey
     DestroyBall,
     ShootBall,
     BallInfoUpdated,
+    ApplyDebuff,
+    ApplyPegDebuff,
+    ApplyBoardDebuff,
+    TiltCamera,
+    ApplyShotDebuff,
+    UpdateBallDebuffs,
+    ShowDebuffSelection,
+    DebuffSelected,
 }

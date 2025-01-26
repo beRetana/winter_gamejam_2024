@@ -407,12 +407,15 @@ public class DataMessenger : MonoBehaviour
 #region KeyEnums
 public enum BoolKey
 {
-    IsBallInPlay
+    IsBallInPlay,
+    IsGameActive
 }
 public enum FloatKey
 {
     CurrentBallSpeed,
-    CurrentBallGravityScale
+    CurrentBallGravityScale,
+    BallMassMultiplier,
+    CurrentBallMass
 }
 public enum IntKey
 {
@@ -420,6 +423,8 @@ public enum IntKey
     ScoreToAdd,
     NewPegID,
     RemainingBallCount,
+    DebuffSelection,
+    DebuffEnumID,
 }
 public enum StringKey
 {

@@ -56,7 +56,7 @@ public class TurretGunFiring : MonoBehaviour
     }
     private void Shoot(InputAction.CallbackContext context)
     {
-        if (_currentBallTransform == null)
+        if (_currentBallTransform == null || !DataMessenger.GetBool(BoolKey.IsGameActive))
         {
             return;
         }
