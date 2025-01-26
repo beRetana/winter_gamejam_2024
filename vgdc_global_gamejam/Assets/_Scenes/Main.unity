@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437c46055d6a36e438be7157fdc84f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointPegMaxCount: 12
+  _pointPegMaxCount: 15
   _pointPegCurse: 3
 --- !u!1 &1237477433
 GameObject:
