@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1196122871015718098}
   - component: {fileID: 6807100933690042966}
   - component: {fileID: 3746181635388342479}
+  - component: {fileID: -8108682252874199754}
   m_Layer: 0
   m_Name: BluePeg
   m_TagString: Untagged
@@ -112,6 +113,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoredAdded: 100
   _timeOn: 3
+  _interactedSprite: {fileID: -1886695199, guid: bf88b10b1abb77549a93a11c527f0455, type: 3}
+--- !u!95 &-8108682252874199754
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333106511465785185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50a3702a1690f5547aeae90661c99cf6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8017197580410547134
 GameObject:
   m_ObjectHideFlags: 0

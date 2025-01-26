@@ -1,14 +1,18 @@
 using System.Collections;
+using System.Numerics;
 using UnityEngine;
 
 public class BasicPeg : MonoBehaviour, IPeg
 {
     [SerializeField] protected int _scoredAdded;
     [SerializeField] protected float _timeOn;
+    [SerializeField] protected Sprite _interactedSprite;
 
     private static int ID;
 
+    protected Animator _animator;
     protected int _myId;
+    protected string _HAS_BEEN_HIT = "HasBeenHit";
 
     protected virtual void Start()
     {
@@ -17,6 +21,8 @@ public class BasicPeg : MonoBehaviour, IPeg
         ID++;
 
         _myId = ID;
+
+        _animator = GetComponent<Animator>();
 
         DataMessenger.SetInt(IntKey.NewBluePegID, _myId);
         DataMessenger.SetGameObject(GameObjectKey.NewBluePegObject, gameObject);
@@ -29,8 +35,11 @@ public class BasicPeg : MonoBehaviour, IPeg
 
     public virtual void ApplyEffect()
     {
-        
+        GetComponentInChildren<SpriteRenderer>().sprite = _interactedSprite;
+        _animator.SetBool(_HAS_BEEN_HIT, true);
+
     }
+
 
     public void ApplyDebuf()
     {
