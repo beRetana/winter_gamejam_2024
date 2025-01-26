@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PointPeg : BasicPeg
 {
-    SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
+    //SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
     public override void OnDestroyPeg()
     {
         if (_hasBeenHit)
