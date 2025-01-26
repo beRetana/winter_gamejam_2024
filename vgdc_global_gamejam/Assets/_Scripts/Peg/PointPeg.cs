@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PointPeg : BasicPeg
 {
+    SpriteRenderer sr = this.GetComponent<SpriteRenderer>();
     public override void OnDestroyPeg()
     {
         if (_hasBeenHit)
@@ -24,6 +25,11 @@ public class PointPeg : BasicPeg
     private void ApplyPopEffect()
     {
         // Animation and sound effects
+        // float diff = .35f;
+        // float og = .3;
+        // sr.transform.localScale = new Vector3(diff, diff, 1);
+        // yield return new WaitForSeconds(0.1);
+        // sr.transform.localScale = new Vector3(og, og, 1);
     }
 
     public override void ApplyEffect()
