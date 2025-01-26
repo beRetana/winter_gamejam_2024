@@ -21,7 +21,8 @@ public class ShotManager : MonoBehaviour
     }
     private void ApplyDebuff()
     {
-        ShotDebuffType debuffType = (ShotDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ShotDebuffType)).Length);
+        ShotDebuffType debuffType = (ShotDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
+            //(ShotDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(ShotDebuffType)).Length);
 
         switch (debuffType)
         {

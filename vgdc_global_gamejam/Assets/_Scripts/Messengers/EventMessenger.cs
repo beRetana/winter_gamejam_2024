@@ -128,4 +128,6 @@ public enum EventKey
     TiltCamera,
     ApplyShotDebuff,
     UpdateBallDebuffs,
+    ShowDebuffSelection,
+    DebuffSelected,
 }

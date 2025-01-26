@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using static BoardManager;
 
 public class PegManager : MonoBehaviour
 {
-    public enum PegDebuffTypes
+    public enum PegDebuffType
     {
         Fake, Sticky, DoubleSize, Pop, ReduceBallMass, IncreaseBallMass
     }
@@ -32,7 +33,8 @@ public class PegManager : MonoBehaviour
     }
     private void ApplyDebuff()
     {
-        PegDebuffTypes debuffType = (PegDebuffTypes)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffTypes)).Length);
+        PegDebuffType debuffType = (PegDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
+        //(PegDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffType)).Length);
 
         float debuffChange = UnityEngine.Random.Range(0, 1);
 

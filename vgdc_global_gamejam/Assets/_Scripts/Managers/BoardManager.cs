@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using static ShotManager;
 
 public class BoardManager : MonoBehaviour
 {
@@ -22,7 +23,8 @@ public class BoardManager : MonoBehaviour
     }
     private void ApplyDebuff()
     {
-        BoardDebuffType debuffType = (BoardDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(BoardDebuffType)).Length);
+        BoardDebuffType debuffType = (BoardDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
+        //(BoardDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(BoardDebuffType)).Length);
 
         switch (debuffType)
         {
