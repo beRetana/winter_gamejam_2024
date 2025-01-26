@@ -71,8 +71,7 @@ public class BallController : MonoBehaviour
     {
         DataMessenger.SetBool(BoolKey.IsBallInPlay, false);
 
-        if (DataMessenger.GetInt(IntKey.RemainingBallCount) == 0 && 
-            DataMessenger.GetInt(IntKey.PointPegCount) != DataMessenger.GetInt(IntKey.StartingPointPegCount))
+        if (DataMessenger.GetInt(IntKey.RemainingBallCount) == 0 )
         {
             EventMessenger.TriggerEvent(EventKey.LostGame);
         }
