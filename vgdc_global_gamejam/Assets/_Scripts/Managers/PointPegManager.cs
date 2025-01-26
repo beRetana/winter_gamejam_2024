@@ -27,6 +27,7 @@ public class PointPegManager : MonoBehaviour
     }
     private void ResetInfo()
     {
+        DataMessenger.SetInt(IntKey.PointPegCount, 0);
         _pointPegMultipliyer = 1;
     }
     private void OnPointPegCaught()

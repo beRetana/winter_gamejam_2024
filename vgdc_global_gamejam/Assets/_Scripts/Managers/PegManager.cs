@@ -33,6 +33,8 @@ public class PegManager : MonoBehaviour
         EventMessenger.StartListening(EventKey.DestroyedBluePeg, OnDestroyedBluePeg);
         EventMessenger.StartListening(EventKey.DestroyedPointPeg, OnDestroyedPointPeg);
 
+        EventMessenger.StartListening(EventKey.RestartGame, ResetPegs);
+
         EventMessenger.StartListening(EventKey.ApplyPegDebuff, ApplyDebuff);
         DataMessenger.SetGameObject(GameObjectKey.PegManager, gameObject);
     }
@@ -42,7 +44,14 @@ public class PegManager : MonoBehaviour
         EventMessenger.StopListening(EventKey.NewBluePegCreated, NewBluePegCreated);
         EventMessenger.StopListening(EventKey.NewPointPegCreated, NewBluePegCreated);
 
+        EventMessenger.StopListening(EventKey.RestartGame, ResetPegs);
+
         EventMessenger.StopListening(EventKey.ApplyPegDebuff, ApplyDebuff);
+    }
+    private void ResetPegs()
+    {
+        currentPointPegs.Clear();
+        currentBluePegs.Clear();
     }
 
     private void NewBluePegCreated()
