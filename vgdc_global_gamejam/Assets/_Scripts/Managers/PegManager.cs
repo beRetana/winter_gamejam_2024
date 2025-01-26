@@ -83,10 +83,7 @@ public class PegManager : MonoBehaviour
         PegDebuffType debuffType = (PegDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
         //(PegDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffType)).Length);
 
-        foreach (BasicPeg peg in currentBluePegs.Values)
-        {
-
-            switch (debuffType)
+        switch (debuffType)
             {
                 case PegDebuffType.Fake:
                     peg.gameObject.AddComponent<FakePeg>();
@@ -105,18 +102,23 @@ public class PegManager : MonoBehaviour
                     UnityEngine.Debug.Log("PopScream");
                     break;*/
             }
-        }
     }
     
-    private void CalculateChance(BasicPeg peg ,float chance)
+    private void CalculateChance(float chance)
     {
-        float rand = UnityEngine.Random.Range(0.0f, 1.0f);
-
-        if (rand <= chance)
+        foreach (BasicPeg peg in currentBluePegs.Values)
         {
-            UnityEngine.Debug.Log("Debuff Applied To: " + peg.gameObject.name);
-            peg.ApplyDebuf();
+            float rand = UnityEngine.Random.Range(0.0f, 1.0f);
+
+            if (rand <= chance)
+            {
+                UnityEngine.Debug.Log("Debuff Applied To: " + peg.gameObject.name);
+                peg.gameObject.AddComponent<DebufNoBounce>();
+                peg.ApplyDebuf();
+            }
+            
         }
+        
     }
 
     public int GetBluePegSize()
