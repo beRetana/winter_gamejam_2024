@@ -138,4 +138,5 @@ public enum EventKey
     DestroyedPointPeg,
     FlashCurseOfRa,
     RestartGame,
+    ResetDebuffs,
 }

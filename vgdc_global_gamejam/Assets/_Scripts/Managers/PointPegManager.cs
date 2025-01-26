@@ -23,6 +23,7 @@ public class PointPegManager : MonoBehaviour
         if (pointPegCount == _pointPegMaxCount)
         {
             EventMessenger.TriggerEvent(EventKey.WonGame);
+            return;
         }
 
         if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 
