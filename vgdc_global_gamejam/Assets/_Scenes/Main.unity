@@ -570,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _winUIPrefab: {fileID: 7258288936263022865, guid: e2bdf6a700e593641ac91f2a1f105394, type: 3}
   _loseUIPrefab: {fileID: 612617462080513210, guid: 2cf04e97ad3e56f48837d5bc2bbd85f0, type: 3}
+  _sceneToLoad: 
 --- !u!1 &752983839
 GameObject:
   m_ObjectHideFlags: 0
