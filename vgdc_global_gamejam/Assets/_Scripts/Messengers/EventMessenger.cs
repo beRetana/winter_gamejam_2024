@@ -136,4 +136,6 @@ public enum EventKey
     LostGame,
     DestroyedBluePeg,
     DestroyedPointPeg,
+    FlashCurseOfRa,
+    RestartGame,
 }

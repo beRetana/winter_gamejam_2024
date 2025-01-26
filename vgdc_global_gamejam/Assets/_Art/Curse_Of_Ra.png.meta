@@ -1,0 +1,2353 @@
+fileFormatVersion: 2
+guid: 75b70223fb591034db095437659b3399
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7083857312477752592
+    second: Curse_Of_Ra_0
+  - first:
+      213: -7918768251681994232
+    second: Curse_Of_Ra_1
+  - first:
+      213: 8106579347758169077
+    second: Curse_Of_Ra_2
+  - first:
+      213: -4217374117144669140
+    second: Curse_Of_Ra_3
+  - first:
+      213: -6381926585515863470
+    second: Curse_Of_Ra_4
+  - first:
+      213: -4208054600235401613
+    second: Curse_Of_Ra_5
+  - first:
+      213: 4959140071094273206
+    second: Curse_Of_Ra_6
+  - first:
+      213: -3740561553174523151
+    second: Curse_Of_Ra_7
+  - first:
+      213: -8392877982820043148
+    second: Curse_Of_Ra_8
+  - first:
+      213: 1626295560580722467
+    second: Curse_Of_Ra_9
+  - first:
+      213: -8992458453478595077
+    second: Curse_Of_Ra_10
+  - first:
+      213: -2872114472753475423
+    second: Curse_Of_Ra_11
+  - first:
+      213: -2319087547067268352
+    second: Curse_Of_Ra_12
+  - first:
+      213: -4259027586730915832
+    second: Curse_Of_Ra_13
+  - first:
+      213: -1253305175857101928
+    second: Curse_Of_Ra_14
+  - first:
+      213: -3901082668155106652
+    second: Curse_Of_Ra_15
+  - first:
+      213: -8813636712044148464
+    second: Curse_Of_Ra_16
+  - first:
+      213: 7476115002064257781
+    second: Curse_Of_Ra_17
+  - first:
+      213: -3252865289679956845
+    second: Curse_Of_Ra_18
+  - first:
+      213: -189751706262333488
+    second: Curse_Of_Ra_19
+  - first:
+      213: 4751611439202314571
+    second: Curse_Of_Ra_20
+  - first:
+      213: -7944196693152401708
+    second: Curse_Of_Ra_21
+  - first:
+      213: -48139561451560565
+    second: Curse_Of_Ra_22
+  - first:
+      213: -8506696400529321374
+    second: Curse_Of_Ra_23
+  - first:
+      213: -4312313699443135422
+    second: Curse_Of_Ra_24
+  - first:
+      213: -8333509859359759943
+    second: Curse_Of_Ra_25
+  - first:
+      213: 7979105749921315506
+    second: Curse_Of_Ra_26
+  - first:
+      213: -8695567159962410902
+    second: Curse_Of_Ra_27
+  - first:
+      213: -7535988051523700172
+    second: Curse_Of_Ra_28
+  - first:
+      213: -2053059176038374705
+    second: Curse_Of_Ra_29
+  - first:
+      213: 1272562790214820191
+    second: Curse_Of_Ra_30
+  - first:
+      213: 1350364919213917941
+    second: Curse_Of_Ra_31
+  - first:
+      213: -8684664559028510244
+    second: Curse_Of_Ra_32
+  - first:
+      213: -709425611849649501
+    second: Curse_Of_Ra_33
+  - first:
+      213: 880207880082816015
+    second: Curse_Of_Ra_34
+  - first:
+      213: 210601439107256009
+    second: Curse_Of_Ra_35
+  - first:
+      213: 5769020641119170828
+    second: Curse_Of_Ra_36
+  - first:
+      213: 75330947479530258
+    second: Curse_Of_Ra_37
+  - first:
+      213: 8419025246748508885
+    second: Curse_Of_Ra_38
+  - first:
+      213: 7152613527744513564
+    second: Curse_Of_Ra_39
+  - first:
+      213: -8519474142141068595
+    second: Curse_Of_Ra_40
+  - first:
+      213: -6670928052032800373
+    second: Curse_Of_Ra_41
+  - first:
+      213: -8181270968566890970
+    second: Curse_Of_Ra_42
+  - first:
+      213: 8210152362537688191
+    second: Curse_Of_Ra_43
+  - first:
+      213: -4748030618787546256
+    second: Curse_Of_Ra_44
+  - first:
+      213: -6920468385406300752
+    second: Curse_Of_Ra_45
+  - first:
+      213: -1817068408546160167
+    second: Curse_Of_Ra_46
+  - first:
+      213: 2333675724968454070
+    second: Curse_Of_Ra_47
+  - first:
+      213: 2722540567411472552
+    second: Curse_Of_Ra_48
+  - first:
+      213: 1759786607178777540
+    second: Curse_Of_Ra_49
+  - first:
+      213: 2337376403209886729
+    second: Curse_Of_Ra_50
+  - first:
+      213: 5020814519010123832
+    second: Curse_Of_Ra_51
+  - first:
+      213: 1340907857861414532
+    second: Curse_Of_Ra_52
+  - first:
+      213: -3454346051648981744
+    second: Curse_Of_Ra_53
+  - first:
+      213: 3360324913532497355
+    second: Curse_Of_Ra_54
+  - first:
+      213: 490977689226440311
+    second: Curse_Of_Ra_55
+  - first:
+      213: 988441712038406495
+    second: Curse_Of_Ra_56
+  - first:
+      213: -3311279928292296837
+    second: Curse_Of_Ra_57
+  - first:
+      213: 8215150984821462596
+    second: Curse_Of_Ra_58
+  - first:
+      213: -8893663752072309698
+    second: Curse_Of_Ra_59
+  - first:
+      213: -29955507321795448
+    second: Curse_Of_Ra_60
+  - first:
+      213: 1347358966801659878
+    second: Curse_Of_Ra_61
+  - first:
+      213: 4041892842357544463
+    second: Curse_Of_Ra_62
+  - first:
+      213: -6834211715918423356
+    second: Curse_Of_Ra_63
+  - first:
+      213: -4477028628834389595
+    second: Curse_Of_Ra_64
+  - first:
+      213: -2253014046695371592
+    second: Curse_Of_Ra_65
+  - first:
+      213: 6470728314137973552
+    second: Curse_Of_Ra_66
+  - first:
+      213: -3356316110735412913
+    second: Curse_Of_Ra_67
+  - first:
+      213: -8074372947996492135
+    second: Curse_Of_Ra_68
+  - first:
+      213: -385413526049791248
+    second: Curse_Of_Ra_69
+  - first:
+      213: -4025051593085929163
+    second: Curse_Of_Ra_70
+  - first:
+      213: -803780307158997511
+    second: Curse_Of_Ra_71
+  - first:
+      213: -503418939800957826
+    second: Curse_Of_Ra_72
+  - first:
+      213: -220083367928823716
+    second: Curse_Of_Ra_73
+  - first:
+      213: -6701068233400145545
+    second: Curse_Of_Ra_74
+  - first:
+      213: 1108356012719995409
+    second: Curse_Of_Ra_75
+  - first:
+      213: 511334530555600647
+    second: Curse_Of_Ra_76
+  - first:
+      213: -4567638010276380581
+    second: Curse_Of_Ra_77
+  - first:
+      213: 2596587150387965733
+    second: Curse_Of_Ra_78
+  - first:
+      213: 7792390351577124103
+    second: Curse_Of_Ra_79
+  - first:
+      213: 2328521410788465765
+    second: Curse_Of_Ra_80
+  - first:
+      213: -5344051606797172153
+    second: Curse_Of_Ra_81
+  - first:
+      213: -375647238553602406
+    second: Curse_Of_Ra_82
+  - first:
+      213: -3089799707412555419
+    second: Curse_Of_Ra_83
+  - first:
+      213: -3549701679116795970
+    second: Curse_Of_Ra_84
+  - first:
+      213: 8041404167931146762
+    second: Curse_Of_Ra_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Curse_Of_Ra_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 439
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2d5326e4511bd90800000000000000
+      internalID: -7083857312477752592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 439
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a8ad30b32ea1290800000000000000
+      internalID: -7918768251681994232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 439
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbb4ae57fa508070800000000000000
+      internalID: 8106579347758169077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 439
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c245aa6c590e875c0800000000000000
+      internalID: -4217374117144669140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 439
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25294b75597de67a0800000000000000
+      internalID: -6381926585515863470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 439
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e3585e2acf995c0800000000000000
+      internalID: -4208054600235401613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 439
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4caf8be9762d440800000000000000
+      internalID: 4959140071094273206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 439
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f29c82f51bd61cc0800000000000000
+      internalID: -3740561553174523151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 439
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47670d621f1868b80800000000000000
+      internalID: -8392877982820043148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_9
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 439
+        width: 47
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f65342233c19610800000000000000
+      internalID: 1626295560580722467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_10
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 439
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf523fe3eae543380800000000000000
+      internalID: -8992458453478595077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_11
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 439
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a05549aa133428d0800000000000000
+      internalID: -2872114472753475423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 369
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003060ab922f0dfd0800000000000000
+      internalID: -2319087547067268352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 369
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8088054a9f4e4e4c0800000000000000
+      internalID: -4259027586730915832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 369
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89301e5359d5b9ee0800000000000000
+      internalID: -1253305175857101928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 369
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa8e2d6bf19cd9c0800000000000000
+      internalID: -3901082668155106652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_16
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 369
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01944476b1cafa580800000000000000
+      internalID: -8813636712044148464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_17
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 369
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f24206fbfe70c760800000000000000
+      internalID: 7476115002064257781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_18
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 369
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3949d62e0408bd2d0800000000000000
+      internalID: -3252865289679956845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_19
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 369
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d795b814dddd5df0800000000000000
+      internalID: -189751706262333488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_20
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 369
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b492658cd6d11f140800000000000000
+      internalID: 4751611439202314571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_21
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 369
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d671de923b80c190800000000000000
+      internalID: -7944196693152401708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 369
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81690ce259f45ff0800000000000000
+      internalID: -48139561451560565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_23
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 369
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2621b52b1b422f980800000000000000
+      internalID: -8506696400529321374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c24a8b9859724c0800000000000000
+      internalID: -4312313699443135422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_25
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 299
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b165ac8fec695c80800000000000000
+      internalID: -8333509859359759943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_26
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 299
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba3659876a7bbe60800000000000000
+      internalID: 7979105749921315506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_27
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 299
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6063e53db3235780800000000000000
+      internalID: -8695567159962410902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_28
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 299
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a77556bcaca6790800000000000000
+      internalID: -7535988051523700172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_29
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 299
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc260659e811283e0800000000000000
+      internalID: -2053059176038374705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_30
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 299
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5162298d1d09a110800000000000000
+      internalID: 1272562790214820191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_31
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 299
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f605ee4db57db210800000000000000
+      internalID: 1350364919213917941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_32
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 299
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd16eadc89fd97780800000000000000
+      internalID: -8684664559028510244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_33
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 299
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2332b2a2d9726f0800000000000000
+      internalID: -709425611849649501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_34
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 299
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cf5d44760273c00800000000000000
+      internalID: 880207880082816015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_35
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 299
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce8c2f94e43ce200800000000000000
+      internalID: 210601439107256009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_36
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 299
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01fdcf15bdaf0050800000000000000
+      internalID: 5769020641119170828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_37
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 299
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b6c1df811ab0100800000000000000
+      internalID: 75330947479530258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_38
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 229
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d28d732bd266d470800000000000000
+      internalID: 8419025246748508885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 229
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c168dd87b10334360800000000000000
+      internalID: 7152613527744513564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_40
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 229
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca4e84e76fb4c980800000000000000
+      internalID: -8519474142141068595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_41
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 229
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b897560e74a1c63a0800000000000000
+      internalID: -6670928052032800373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_42
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 229
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62eba5b7669467e80800000000000000
+      internalID: -8181270968566890970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_43
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 229
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c94e0131250f170800000000000000
+      internalID: 8210152362537688191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_44
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 229
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b7d70fe4b9b1eb0800000000000000
+      internalID: -4748030618787546256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_45
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 229
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd49807bae85ff90800000000000000
+      internalID: -6920468385406300752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_46
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 229
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d19500e8e978c6e0800000000000000
+      internalID: -1817068408546160167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_47
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 229
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b762bf15b1e26020800000000000000
+      internalID: 2333675724968454070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_48
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 229
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8b62fa83868c520800000000000000
+      internalID: 2722540567411472552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_49
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 229
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3816178940c6810800000000000000
+      internalID: 1759786607178777540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_50
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 159
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90c94bb6477007020800000000000000
+      internalID: 2337376403209886729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_51
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 159
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830e8b024348da540800000000000000
+      internalID: 5020814519010123832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e0c50a79cdb9210800000000000000
+      internalID: 1340907857861414532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01570346192bf00d0800000000000000
+      internalID: -3454346051648981744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_54
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 159
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdeff084b542ae20800000000000000
+      internalID: 3360324913532497355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_55
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 159
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77eebf66b9d40d600800000000000000
+      internalID: 490977689226440311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_56
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 159
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f596a370086a7bd00800000000000000
+      internalID: 988441712038406495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_57
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 159
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77b14af278fb02d0800000000000000
+      internalID: -3311279928292296837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_58
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 159
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446db728b44120270800000000000000
+      internalID: 8215150984821462596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_59
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 159
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3456f920fb539480800000000000000
+      internalID: -8893663752072309698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_60
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 159
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c8403ff93959ff0800000000000000
+      internalID: -29955507321795448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_61
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 159
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7762977d7c2b210800000000000000
+      internalID: 1347358966801659878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_62
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 159
+        width: 15
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f065ae01020b71830800000000000000
+      internalID: 4041892842357544463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_63
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 89
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca9ed057a00821a0800000000000000
+      internalID: -6834211715918423356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_64
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 89
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a17211be266ed1c0800000000000000
+      internalID: -4477028628834389595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_65
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 89
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcc1c859afabb0e0800000000000000
+      internalID: -2253014046695371592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_66
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 89
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033914a4e15acc950800000000000000
+      internalID: 6470728314137973552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_67
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 89
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41f1b1a748fb61d0800000000000000
+      internalID: -3356316110735412913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_68
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 89
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e35aa659012ff80800000000000000
+      internalID: -8074372947996492135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_69
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 118
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2eb28a07cb6aaf0800000000000000
+      internalID: -385413526049791248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_70
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 89
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5393e77d6e42428c0800000000000000
+      internalID: -4025051593085929163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_71
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 89
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5655ab11668d4f0800000000000000
+      internalID: -803780307158997511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_72
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 89
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cc5f7342f7309f0800000000000000
+      internalID: -503418939800957826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_73
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 89
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5081a9c75b12fcf0800000000000000
+      internalID: -220083367928823716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_74
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 89
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779a78c02f50103a0800000000000000
+      internalID: -6701068233400145545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 89
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11af7d6dbeba16f00800000000000000
+      internalID: 1108356012719995409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_76
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 19
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f582fdb00a81700800000000000000
+      internalID: 511334530555600647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_77
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 19
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5087e61e6d7c90c0800000000000000
+      internalID: -4567638010276380581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_78
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 19
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52fe737814ee80420800000000000000
+      internalID: 2596587150387965733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_79
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 19
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d8fe82db1242c60800000000000000
+      internalID: 7792390351577124103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_80
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 19
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c10f5d2e1905020800000000000000
+      internalID: 2328521410788465765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_81
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 19
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742cf7ba06d16d5b0800000000000000
+      internalID: -5344051606797172153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_82
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 19
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96f729a3de69caf0800000000000000
+      internalID: -375647238553602406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_83
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 19
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569919c5983de15d0800000000000000
+      internalID: -3089799707412555419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_84
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 19
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebfb2a5412decbec0800000000000000
+      internalID: -3549701679116795970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curse_Of_Ra_85
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 19
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02b1ec4c7ec89f60800000000000000
+      internalID: 8041404167931146762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Curse_Of_Ra_0: -7083857312477752592
+      Curse_Of_Ra_1: -7918768251681994232
+      Curse_Of_Ra_10: -8992458453478595077
+      Curse_Of_Ra_11: -2872114472753475423
+      Curse_Of_Ra_12: -2319087547067268352
+      Curse_Of_Ra_13: -4259027586730915832
+      Curse_Of_Ra_14: -1253305175857101928
+      Curse_Of_Ra_15: -3901082668155106652
+      Curse_Of_Ra_16: -8813636712044148464
+      Curse_Of_Ra_17: 7476115002064257781
+      Curse_Of_Ra_18: -3252865289679956845
+      Curse_Of_Ra_19: -189751706262333488
+      Curse_Of_Ra_2: 8106579347758169077
+      Curse_Of_Ra_20: 4751611439202314571
+      Curse_Of_Ra_21: -7944196693152401708
+      Curse_Of_Ra_22: -48139561451560565
+      Curse_Of_Ra_23: -8506696400529321374
+      Curse_Of_Ra_24: -4312313699443135422
+      Curse_Of_Ra_25: -8333509859359759943
+      Curse_Of_Ra_26: 7979105749921315506
+      Curse_Of_Ra_27: -8695567159962410902
+      Curse_Of_Ra_28: -7535988051523700172
+      Curse_Of_Ra_29: -2053059176038374705
+      Curse_Of_Ra_3: -4217374117144669140
+      Curse_Of_Ra_30: 1272562790214820191
+      Curse_Of_Ra_31: 1350364919213917941
+      Curse_Of_Ra_32: -8684664559028510244
+      Curse_Of_Ra_33: -709425611849649501
+      Curse_Of_Ra_34: 880207880082816015
+      Curse_Of_Ra_35: 210601439107256009
+      Curse_Of_Ra_36: 5769020641119170828
+      Curse_Of_Ra_37: 75330947479530258
+      Curse_Of_Ra_38: 8419025246748508885
+      Curse_Of_Ra_39: 7152613527744513564
+      Curse_Of_Ra_4: -6381926585515863470
+      Curse_Of_Ra_40: -8519474142141068595
+      Curse_Of_Ra_41: -6670928052032800373
+      Curse_Of_Ra_42: -8181270968566890970
+      Curse_Of_Ra_43: 8210152362537688191
+      Curse_Of_Ra_44: -4748030618787546256
+      Curse_Of_Ra_45: -6920468385406300752
+      Curse_Of_Ra_46: -1817068408546160167
+      Curse_Of_Ra_47: 2333675724968454070
+      Curse_Of_Ra_48: 2722540567411472552
+      Curse_Of_Ra_49: 1759786607178777540
+      Curse_Of_Ra_5: -4208054600235401613
+      Curse_Of_Ra_50: 2337376403209886729
+      Curse_Of_Ra_51: 5020814519010123832
+      Curse_Of_Ra_52: 1340907857861414532
+      Curse_Of_Ra_53: -3454346051648981744
+      Curse_Of_Ra_54: 3360324913532497355
+      Curse_Of_Ra_55: 490977689226440311
+      Curse_Of_Ra_56: 988441712038406495
+      Curse_Of_Ra_57: -3311279928292296837
+      Curse_Of_Ra_58: 8215150984821462596
+      Curse_Of_Ra_59: -8893663752072309698
+      Curse_Of_Ra_6: 4959140071094273206
+      Curse_Of_Ra_60: -29955507321795448
+      Curse_Of_Ra_61: 1347358966801659878
+      Curse_Of_Ra_62: 4041892842357544463
+      Curse_Of_Ra_63: -6834211715918423356
+      Curse_Of_Ra_64: -4477028628834389595
+      Curse_Of_Ra_65: -2253014046695371592
+      Curse_Of_Ra_66: 6470728314137973552
+      Curse_Of_Ra_67: -3356316110735412913
+      Curse_Of_Ra_68: -8074372947996492135
+      Curse_Of_Ra_69: -385413526049791248
+      Curse_Of_Ra_7: -3740561553174523151
+      Curse_Of_Ra_70: -4025051593085929163
+      Curse_Of_Ra_71: -803780307158997511
+      Curse_Of_Ra_72: -503418939800957826
+      Curse_Of_Ra_73: -220083367928823716
+      Curse_Of_Ra_74: -6701068233400145545
+      Curse_Of_Ra_75: 1108356012719995409
+      Curse_Of_Ra_76: 511334530555600647
+      Curse_Of_Ra_77: -4567638010276380581
+      Curse_Of_Ra_78: 2596587150387965733
+      Curse_Of_Ra_79: 7792390351577124103
+      Curse_Of_Ra_8: -8392877982820043148
+      Curse_Of_Ra_80: 2328521410788465765
+      Curse_Of_Ra_81: -5344051606797172153
+      Curse_Of_Ra_82: -375647238553602406
+      Curse_Of_Ra_83: -3089799707412555419
+      Curse_Of_Ra_84: -3549701679116795970
+      Curse_Of_Ra_85: 8041404167931146762
+      Curse_Of_Ra_9: 1626295560580722467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
