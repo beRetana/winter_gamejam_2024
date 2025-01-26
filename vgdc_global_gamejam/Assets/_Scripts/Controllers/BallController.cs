@@ -77,6 +77,8 @@ public class BallController : MonoBehaviour
         
         Debug.Log("Lost Ball: " + DataMessenger.GetInt(IntKey.RemainingBallCount));
 
+        AudioPlayer.PlaySound(SoundKey.BallPop);
+
         Destroy(gameObject);
     }
 
