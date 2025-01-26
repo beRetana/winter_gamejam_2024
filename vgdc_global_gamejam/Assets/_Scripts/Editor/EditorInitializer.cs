@@ -24,7 +24,7 @@ public class EditorInitializer
     // The scenes names that you want to load in addition to the first scene. Loaded in the list order.
     static List<string> extraScenesToLoad = new List<string>
     {
-        "mary" // "whatever this scene is"
+        "Start" // "whatever this scene is"
         // "Game_Brandon" // "whatever this scne actually is"
         //"Game" // Turret Testing
         //"Chris_Test",
