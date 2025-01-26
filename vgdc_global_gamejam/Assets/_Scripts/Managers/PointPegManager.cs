@@ -4,20 +4,30 @@ using UnityEngine;
 public class PointPegManager : MonoBehaviour
 {
     [SerializeField] private int _pointPegMaxCount = 15;
+    [SerializeField] private int _pointPegCurse = 3;
+
+    private int _pointPegMultipliyer;
 
     void Start()
     {
-        EventMessenger.StartListening(EventKey.PointPegCaught, CheckWonGame);
+        EventMessenger.StartListening(EventKey.RoundEnded, OnPointPegCaught);
     }
 
-    private void CheckWonGame()
+    private void OnPointPegCaught()
     {
-        int poinPegCount = DataMessenger.GetInt(IntKey.PointPegCount);
+        int pointPegCount = DataMessenger.GetInt(IntKey.PointPegCount);
+        _pointPegMultipliyer++;
+        
+        if (pointPegCount == 0){return;}
 
-        if (poinPegCount == _pointPegMaxCount)
+        if (pointPegCount == _pointPegMaxCount)
         {
-            Debug.Log("Won Game");
             EventMessenger.TriggerEvent(EventKey.WonGame);
+        }
+
+        if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 
+        {
+            EventMessenger.TriggerEvent(EventKey.ShowDebuffSelection);
         }
     }
 }
