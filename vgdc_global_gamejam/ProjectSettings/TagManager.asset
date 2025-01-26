@@ -7,6 +7,9 @@ TagManager:
   - Ball
   - Wall
   - Turret
+  - Messenger
+  - Managers
+  - Persist
   layers:
   - Default
   - TransparentFX
