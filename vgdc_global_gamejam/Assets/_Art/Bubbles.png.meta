@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce263ed25d74d428b924a572f7592094
+guid: bf88b10b1abb77549a93a11c527f0455
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -108,32 +108,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -146,7 +120,7 @@ TextureImporter:
         width: 659
         height: 679
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,7 +142,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +159,12 @@ TextureImporter:
       name: Bubbles_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 89
-        width: 750
-        height: 1413
+        x: 179
+        y: 115
+        width: 688
+        height: 688
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +181,12 @@ TextureImporter:
       name: Bubbles_3
       rect:
         serializedVersion: 2
-        x: 1047
+        x: 1044
         y: 822
         width: 631
         height: 599
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,12 +203,12 @@ TextureImporter:
       name: Bubbles_4
       rect:
         serializedVersion: 2
-        x: 1058
-        y: 127
-        width: 677
-        height: 650
+        x: 1065
+        y: 150
+        width: 651
+        height: 627
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,11 +221,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Bubbles_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 809
+        width: 680
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750b8f1c14211c64b83c720a4776d3b4
+      internalID: -1886695199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ec8fad952c0f8c343a8dbc8ad3ff1e4b
     internalID: 0
     vertices: []
     indices: 
@@ -260,7 +256,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bubbles_0: 4078796110908485188
+      Bubbles_1: -7938878928584171511
+      Bubbles_2: -5417141958962910980
+      Bubbles_3: 5179279333322180978
+      Bubbles_4: -6963593870422336085
+      Bubbles_5: -1886695199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
