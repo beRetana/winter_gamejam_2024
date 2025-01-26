@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Brandon.unity
     guid: f1112d49f6da147e0a2e2827deedeb10
+  - enabled: 1
+    path: Assets/_Scenes/Game_Brandon.unity
+    guid: c86e0032708a746fc9e4f3a44b92dc6c
+  - enabled: 1
+    path: Assets/_Scenes/Main.unity
+    guid: 9a83dd2f5b9a9f549a1179b98074056b
+  - enabled: 1
+    path: Assets/_Scenes/mary.unity
+    guid: f9fde01bb84c2a14296fa2d39fcbd1d4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
