@@ -13,26 +13,27 @@ public class BoardManager : MonoBehaviour
     {
         EventMessenger.StartListening(EventKey.ApplyBoardDebuff, ApplyDebuff);
     }
+
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.ApplyBoardDebuff, ApplyDebuff);
     }
+
     private void TiltBoard()
     {
         EventMessenger.TriggerEvent(EventKey.TiltCamera);
     }
+
     private void ApplyDebuff()
     {
         BoardDebuffType debuffType = (BoardDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
         //(BoardDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(BoardDebuffType)).Length);
-
+        Debug.Log("Applied Board Debuff: " + debuffType);
         switch (debuffType)
         {
             case BoardDebuffType.TiltBoard:
                 TiltBoard();
                 break;
         }
-
-        Debug.Log("Applied Board Debuff: " + debuffType);
     }
 }

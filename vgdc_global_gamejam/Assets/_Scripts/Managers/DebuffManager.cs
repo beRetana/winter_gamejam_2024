@@ -9,6 +9,7 @@ public class DebuffManager : MonoBehaviour
     private const float DEBUFF_SHOT_CHANCE = 1f;
 
     [SerializeField] private GameObject _debuffSelectionPrefab;
+
     private GameObject _debuffSelectionObject;
 
     // Button ID : DebuffType, SpecificDebuffType (as an int)
@@ -27,6 +28,7 @@ public class DebuffManager : MonoBehaviour
         EventMessenger.StartListening(EventKey.ShowDebuffSelection, ShowDebuffSelection);
         EventMessenger.StartListening(EventKey.DebuffSelected, DebuffSelected);
     }
+
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.ApplyDebuff, ApplyDebuff);
@@ -64,6 +66,7 @@ public class DebuffManager : MonoBehaviour
         int debuffSelection = DataMessenger.GetInt(IntKey.DebuffSelection);
 
         EventKey eventKey;
+
         switch (_debuffTypes[debuffSelection].Item1)
         {
             case DebuffType.Peg:
@@ -99,13 +102,17 @@ public class DebuffManager : MonoBehaviour
         float rand = UnityEngine.Random.Range(0.0f, 1.0f);
         DebuffType debuffType = DebuffType.Peg;
 
-        if (rand > DEBUFF_SHOT_CHANCE)
+        if (rand < DEBUFF_PEG_CHANCE)
         {
             debuffType = DebuffType.Shot;
         }
-        else if (rand > DEBUFF_BOARD_CHANCE)
+        else if (rand < DEBUFF_BOARD_CHANCE)
         {
             debuffType = DebuffType.Board;
+        }
+        else // if (rand < DEBUFF_SHOT_CHANCE)
+        {
+            debuffType = DebuffType.Shot;
         }
 
         int specificDebuffType;
