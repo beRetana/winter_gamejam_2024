@@ -21,8 +21,9 @@ public class DebufBlacHole : MonoBehaviour, IDebuf
     {
         if (_lerpValue > 0)
         {
-            float lerpValue = Mathf.Lerp(_lerpValue, .6f, 5f*Time.deltaTime);
-            _blackHole.transform.localScale = new Vector3(lerpValue, 1f, 1f);
+            _lerpValue -= Time.deltaTime;
+            _lerpValue = Mathf.Lerp(_lerpValue, .6f, Time.deltaTime);
+            _blackHole.transform.localScale = new Vector3(_lerpValue, 1f, 1f);
         }
     }
 
