@@ -63,6 +63,8 @@ public class PointPeg : BasicPeg
             _animator.SetBool(_HAS_BEEN_HIT, true);
 
             UpdatePointPegCount();
+
+            AudioPlayer.PlaySound(SoundKey.BubblePop, 0.95f, 1.05f);
         }
     }
 }

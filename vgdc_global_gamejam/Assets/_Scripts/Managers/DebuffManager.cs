@@ -24,14 +24,14 @@ public class DebuffManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EventMessenger.StartListening(EventKey.ApplyDebuff, ApplyDebuff);
+        //EventMessenger.StartListening(EventKey.ApplyDebuff, ApplyDebuff);
         EventMessenger.StartListening(EventKey.ShowDebuffSelection, ShowDebuffSelection);
         EventMessenger.StartListening(EventKey.DebuffSelected, DebuffSelected);
     }
 
     private void OnDisable()
     {
-        EventMessenger.StopListening(EventKey.ApplyDebuff, ApplyDebuff);
+        //EventMessenger.StopListening(EventKey.ApplyDebuff, ApplyDebuff);
         EventMessenger.StopListening(EventKey.ShowDebuffSelection, ShowDebuffSelection);
         EventMessenger.StopListening(EventKey.DebuffSelected, DebuffSelected);
     }
@@ -151,7 +151,7 @@ public class DebuffManager : MonoBehaviour
     
     // Chooses the Category of debuff to apply
     // What is the difference between this and the GetRandomDebuff() method?
-    private void ApplyDebuff()
+    /*private void ApplyDebuff()
     {
         // Choose top-level debuff type
         float rand = UnityEngine.Random.Range(0.0f, 1.0f);
@@ -177,5 +177,5 @@ public class DebuffManager : MonoBehaviour
             case DebuffType.Shot:
                 break;
         }
-    }
+    }*/
 }

@@ -38,6 +38,7 @@ public class BasicPeg : MonoBehaviour, IPeg
         GetComponentInChildren<SpriteRenderer>().sprite = _interactedSprite;
         _animator.SetBool(_HAS_BEEN_HIT, true);
 
+        AudioPlayer.PlaySound(SoundKey.BubblePop, 0.95f, 1.05f);
     }
 
 
