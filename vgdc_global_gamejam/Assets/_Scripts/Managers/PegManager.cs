@@ -13,7 +13,7 @@ public class PegManager : MonoBehaviour
 
     public enum PegDebuffType
     {
-        Fake, NoBounce, Death, PopScream
+        Fake, NoBounce, Death
     }
 
     [Serializable]
@@ -91,10 +91,10 @@ public class PegManager : MonoBehaviour
                     peg.gameObject.AddComponent<DeathBall>();
                     CalculateChance(peg, debufDeath.debuffChange);
                     break;
-                case PegDebuffType.PopScream:
+                /*case PegDebuffType.PopScream:
                     //par.Value.SetPopScream(debufPopScream.debuffChange);
                     UnityEngine.Debug.Log("PopScream");
-                    break;
+                    break;*/
             }
         }
     }

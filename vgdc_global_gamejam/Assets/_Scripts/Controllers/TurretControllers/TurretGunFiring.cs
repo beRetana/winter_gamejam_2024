@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 
 public class TurretGunFiring : MonoBehaviour
 {
+    private const string SPAWN_POINT_OBJECT_NAME = "Spawner";
+
     [SerializeField] private GameObject _bulletPrefab;
 
     private PlayerControls _playerControls;
@@ -31,8 +33,7 @@ public class TurretGunFiring : MonoBehaviour
 
     void Start()
     {
-        int firstChild = 0;
-        _spawner = transform.GetChild(firstChild).transform;
+        _spawner = transform.Find(SPAWN_POINT_OBJECT_NAME);
 
         _playerControls.Player.Shoot.Enable();
         _playerControls.Player.Shoot.performed += Shoot;

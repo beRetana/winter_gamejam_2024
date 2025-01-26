@@ -6,11 +6,15 @@ public class FakePeg : MonoBehaviour, IDebuf
 
     public void DisableDebuff()
     {
-        GetComponent<Collider2D>().enabled = true;
+        GetComponent<Collider2D>().isTrigger = false;
     }
 
     public void EnableDebuff()
     {
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<Collider2D>().isTrigger = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        EventMessenger.TriggerEvent(EventKey.FlashCurseOfRa);
     }
 }

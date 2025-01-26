@@ -8,11 +8,21 @@ public class PointPegManager : MonoBehaviour
 
     private int _pointPegMultipliyer;
 
-    void Start()
+    private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.RoundEnded, OnPointPegCaught);
-    }
+        EventMessenger.StartListening(EventKey.RestartGame, RestartGame);
 
+    }
+    private void OnDisable()
+    {
+        EventMessenger.StopListening(EventKey.RoundEnded, OnPointPegCaught);
+        EventMessenger.StopListening(EventKey.RestartGame, RestartGame);
+    }
+    private void RestartGame()
+    {
+        _pointPegMultipliyer = 0;
+    }
     private void OnPointPegCaught()
     {
         int pointPegCount = DataMessenger.GetInt(IntKey.PointPegCount);
@@ -23,6 +33,7 @@ public class PointPegManager : MonoBehaviour
         if (pointPegCount == _pointPegMaxCount)
         {
             EventMessenger.TriggerEvent(EventKey.WonGame);
+            return;
         }
 
         if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 

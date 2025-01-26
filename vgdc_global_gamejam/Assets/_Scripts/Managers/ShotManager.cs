@@ -10,10 +10,12 @@ public class ShotManager : MonoBehaviour
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.ApplyShotDebuff, ApplyDebuff);
+        EventMessenger.StartListening(EventKey.ResetDebuffs, ResetDebuffs);
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.ApplyShotDebuff, ApplyDebuff);
+        EventMessenger.StopListening(EventKey.ResetDebuffs, ResetDebuffs);
     }
     private void Start()
     {
@@ -36,5 +38,9 @@ public class ShotManager : MonoBehaviour
         EventMessenger.TriggerEvent(EventKey.UpdateBallDebuffs);
 
         Debug.Log("Applied Shot Debuff: " + debuffType);
+    }
+    private void ResetDebuffs()
+    {
+        DataMessenger.SetFloat(FloatKey.BallMassMultiplier, 1);
     }
 }
