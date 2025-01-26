@@ -66,6 +66,13 @@ public class BallController : MonoBehaviour
 
         EventMessenger.TriggerEvent(EventKey.RoundEnded);
 
+        if (DataMessenger.GetInt(IntKey.RemainingBallCount) == 0 && DataMessenger.GetInt(IntKey.PointPegCount) != 15)
+        {
+            EventMessenger.TriggerEvent(EventKey.LostGame);
+        }
+        
+        Debug.Log("Lost Ball: " + DataMessenger.GetInt(IntKey.RemainingBallCount));
+
         Destroy(gameObject);
     }
 

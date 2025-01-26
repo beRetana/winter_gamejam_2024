@@ -425,6 +425,7 @@ public enum IntKey
     RemainingBallCount,
     DebuffSelection,
     DebuffEnumID,
+    PointPegCount,
 }
 public enum StringKey
 {

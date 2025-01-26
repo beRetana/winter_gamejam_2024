@@ -1,26 +1,43 @@
 using System.Collections;
+using Codice.CM.Common;
 using UnityEngine;
 
 public class BasicPeg : MonoBehaviour, IPeg
 {
-    [SerializeField] private int _scoredAdded;
-    [SerializeField] private float _timeOn;
+    [SerializeField] protected int _scoredAdded;
+    [SerializeField] protected float _timeOn;
 
-    private bool _hasBeenHit;
+
+    protected bool _hasBeenHit;
+    protected bool _effecthasBeenApplied;
+    protected IDebuf _debuf;
 
     void Start(){
         EventMessenger.StartListening(EventKey.RoundEnded, OnDestroyPeg);
     }
 
-    public void ApplyEffect()
+    public virtual void ApplyEffect()
     {
         
     }
 
-    public int CalculateScore(int score)
+    public void ApplyDebuf(IDebuf debuf)
+    {
+        _debuf?.DisableDebuff();
+        _debuf = debuf;
+        _debuf?.EnableDebuff();
+    }
+
+    public void DisableDebuff()
+    {
+        _debuf?.DisableDebuff();
+    }
+
+    public virtual int CalculateScore(int score)
     {
         if (!_hasBeenHit){
             _hasBeenHit = true;
+            _debuf?.ApplyDebuff();
             return score + _scoredAdded;
         }
         return score;
@@ -31,7 +48,7 @@ public class BasicPeg : MonoBehaviour, IPeg
         // Animation and sound effects
     }
 
-    public void OnDestroyPeg()
+    public virtual void OnDestroyPeg()
     {
         if (_hasBeenHit)
         {

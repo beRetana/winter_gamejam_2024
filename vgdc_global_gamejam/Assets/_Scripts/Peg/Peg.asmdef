@@ -2,7 +2,8 @@
     "name": "Peg",
     "rootNamespace": "",
     "references": [
-        "GUID:6bcdabba3e3ff2940ac27c559ff81375"
+        "GUID:6bcdabba3e3ff2940ac27c559ff81375",
+        "GUID:8fca3c45e93134dc4bc2281a113f6237"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

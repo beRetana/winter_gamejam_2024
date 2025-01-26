@@ -131,4 +131,7 @@ public enum EventKey
     UpdateBallDebuffs,
     ShowDebuffSelection,
     DebuffSelected,
+    PointPegCaught,
+    WonGame,
+    LostGame,
 }
