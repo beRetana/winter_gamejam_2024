@@ -10,25 +10,34 @@ public class PegManager : MonoBehaviour
         Fake, Sticky, DoubleSize, Pop, ReduceBallMass, IncreaseBallMass
     }
 
-    private Dictionary<int, Peg> currentPegs = new();
+    private Dictionary<int, Peg> currentBluePegs = new();
+    private Dictionary<int, Peg> currentOrangePegs = new();
 
     private void OnEnable()
     {
-        EventMessenger.StartListening(EventKey.NewPegCreated, NewPegCreated);
+        EventMessenger.StartListening(EventKey.NewPegBlueCreated, NewPegBlueCreated);
+        EventMessenger.StartListening(EventKey.NewPegOrangeCreated, NewPegOrangeCreated);
 
         EventMessenger.StartListening(EventKey.ApplyPegDebuff, ApplyDebuff);
         DataMessenger.SetGameObject(GameObjectKey.PegManager, gameObject);
     }
     private void OnDisable()
     {
-        EventMessenger.StopListening(EventKey.NewPegCreated, NewPegCreated);
+        EventMessenger.StopListening(EventKey.NewPegBlueCreated, NewPegBlueCreated);
+        EventMessenger.StopListening(EventKey.NewPegOrangeCreated, NewPegBlueCreated);
 
         EventMessenger.StopListening(EventKey.ApplyPegDebuff, ApplyDebuff);
     }
-    private void NewPegCreated()
+    private void NewPegBlueCreated()
     {
         // Add peg to dictionary
-        currentPegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
+        currentBluePegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
+            DataMessenger.GetGameObject(GameObjectKey.NewPegObject).GetComponent<Peg>());
+    }
+    private void NewPegOrangeCreated()
+    {
+        // Add peg to dictionary
+        currentOrangePegs.Add(DataMessenger.GetInt(IntKey.NewPegID), 
             DataMessenger.GetGameObject(GameObjectKey.NewPegObject).GetComponent<Peg>());
     }
     private void ApplyDebuff()
@@ -38,7 +47,7 @@ public class PegManager : MonoBehaviour
 
         float debuffChange = UnityEngine.Random.Range(0, 1);
 
-        foreach (var par in currentPegs)
+        foreach (var par in currentBluePegs)
         {
 
         }
@@ -46,6 +55,6 @@ public class PegManager : MonoBehaviour
 
     public int GetBluePegSize()
     {
-        return currentPegs.Count;
+        return currentBluePegs.Count;
     }
 }
