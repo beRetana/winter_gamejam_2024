@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
+
     private const float MIN_Y = -6;
 
     private Rigidbody2D _rigidbody;

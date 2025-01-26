@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
+using System.Collections;
+
 /* Allows faster testing of scenes.
    Since scripts in Test rely on scripts in Main, this script will load Main first, then load other scenes */
 [InitializeOnLoad]
@@ -22,8 +24,8 @@ public class EditorInitializer
     // The scenes names that you want to load in addition to the first scene. Loaded in the list order.
     static List<string> extraScenesToLoad = new List<string>
     {
-        //"mary", // "whatever this scene is"
-        "Game_Brandon" // "whatever this scne actually is"
+        "mary" // "whatever this scene is"
+        // "Game_Brandon" // "whatever this scne actually is"
         //"Game" // Turret Testing
         //"Chris_Test",
     };
