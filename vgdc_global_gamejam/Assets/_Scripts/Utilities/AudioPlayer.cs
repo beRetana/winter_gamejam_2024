@@ -32,6 +32,13 @@ public class AudioPlayer : MonoBehaviour
     {
         PlaySound(key, -1f, doRestartSound); 
     }
+    /// <summary>
+    /// Plays a sound with the given name.
+    /// </summary>
+    public static void PlaySound(SoundKey key, bool doRestartSound = true)
+    {
+        PlaySound(key, -1f, doRestartSound);
+    }
 
     /// <summary>
     /// Plays a sound at the given volume.
@@ -45,6 +52,13 @@ public class AudioPlayer : MonoBehaviour
         sounds[key].volume = (volume==-1)?100f:volume;
         sounds[key].Play();
     }
+    /// <summary>
+    /// Plays a sound at the given volume.
+    /// </summary>
+    public static void PlaySound(SoundKey key, float volume, bool doRestartSound = true)
+    {
+        PlaySound(key.ToString(), volume, doRestartSound);
+    }
 
     /// <summary>
     /// Plays a sound at a random pitch between the given pitch-bounds.
@@ -57,6 +71,13 @@ public class AudioPlayer : MonoBehaviour
             sounds[key].pitch = Mathf.Pow(1.05946f, (int)Mathf.Log(sounds[key].pitch, 1.05946f));
         }
         sounds[key].Play();
+    }
+    /// <summary>
+    /// Plays a sound at a random pitch between the given pitch-bounds.
+    /// </summary>
+    public static void PlaySound(SoundKey key, float minPitch, float maxPitch, bool doRoundSemitone = false)
+    {
+        PlaySound(key.ToString(), minPitch, maxPitch, doRoundSemitone);
     }
 
     /// <summary>
@@ -137,4 +158,8 @@ public class AudioPlayer : MonoBehaviour
             sounds.Add(transform.name, transform.GetComponent<AudioSource>());
         }
     }
+}
+public enum SoundKey
+{
+    BubblePop,
 }

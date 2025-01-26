@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8471824882115528732}
   - component: {fileID: 6445940313050506683}
   - component: {fileID: 4236750139792404870}
+  - component: {fileID: 6190477603932278523}
   m_Layer: 0
   m_Name: PointPeg
   m_TagString: Untagged
@@ -29,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5336368953493037197}
   m_Father: {fileID: 0}
@@ -97,7 +98,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &4236750139792404870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +113,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoredAdded: 200
   _timeOn: 2
+  _interactedSprite: {fileID: -6963593870422336085, guid: bf88b10b1abb77549a93a11c527f0455, type: 3}
+--- !u!95 &6190477603932278523
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988483918740888517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c07ed42b6b91ceb46b460cfb5f0d8556, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8136874242515096874
 GameObject:
   m_ObjectHideFlags: 0

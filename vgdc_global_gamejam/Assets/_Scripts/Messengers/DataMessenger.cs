@@ -441,6 +441,7 @@ public enum StringListKey
 public enum Vector2Key
 {
     BulletDirection,
+    TurretPosition,
 }
 public enum Vector3Key
 {

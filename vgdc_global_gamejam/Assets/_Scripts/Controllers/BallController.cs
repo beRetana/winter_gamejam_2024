@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-
     private const float MIN_Y = -6;
 
     private Rigidbody2D _rigidbody;
@@ -17,20 +16,24 @@ public class BallController : MonoBehaviour
 
         originalMass = _rigidbody.mass;
 
+        EventMessenger.StartListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
+        
         UpdateDebuffs();
+    }
+    private void OnDestroy()
+    {
+        EventMessenger.StopListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
     }
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StartListening(EventKey.ShootBall, AddForce);
-        EventMessenger.StartListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
         DataMessenger.SetGameObject(GameObjectKey.PlayerBall, gameObject);
     }
     private void OnDisable()
     {
         EventMessenger.StopListening(EventKey.DestroyBall, DestroyBall);
         EventMessenger.StopListening(EventKey.ShootBall, AddForce);
-        EventMessenger.StopListening(EventKey.UpdateBallDebuffs, UpdateDebuffs);
     }
     private void Start()
     {

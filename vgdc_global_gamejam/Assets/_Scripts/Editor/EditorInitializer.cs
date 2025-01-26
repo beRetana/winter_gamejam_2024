@@ -12,7 +12,7 @@ using System.Collections;
 public class EditorInitializer
 {
     // your first scene path:
-    const string firstSceneToLoad = "Assets/Scenes/Main.unity";
+    const string firstSceneToLoad = "Assets/_Scenes/Main.unity";
     // Editor pref save name, no need to change
     const string activeEditorScene = "PreviousScenePath";
     const string isEditorInitialization = "EditorIntialization";
@@ -24,10 +24,10 @@ public class EditorInitializer
     // The scenes names that you want to load in addition to the first scene. Loaded in the list order.
     static List<string> extraScenesToLoad = new List<string>
     {
-        "Start" // "whatever this scene is"
-        // "Game_Brandon" // "whatever this scne actually is"
+        //"Start" // "whatever this scene is"
+        //"Game_Brandon" // "whatever this scne actually is"
         //"Game" // Turret Testing
-        //"Chris_Test",
+        "Chris_Test",
     };
 
     static EditorInitializer()

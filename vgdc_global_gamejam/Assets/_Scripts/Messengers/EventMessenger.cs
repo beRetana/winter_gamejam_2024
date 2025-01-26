@@ -135,5 +135,5 @@ public enum EventKey
     WonGame,
     LostGame,
     DestroyedBluePeg,
-    DestroyedPointPeg
+    DestroyedPointPeg,
 }
