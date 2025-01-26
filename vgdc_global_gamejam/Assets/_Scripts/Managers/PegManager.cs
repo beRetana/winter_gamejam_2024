@@ -86,16 +86,19 @@ public class PegManager : MonoBehaviour
         switch (debuffType)
             {
                 case PegDebuffType.Fake:
+                    int rand = UnityEngine.Random.Range(0, GetBluePegSize()+1);
+
+                    BasicPeg peg = currentBluePegs[rand];
                     peg.gameObject.AddComponent<FakePeg>();
-                    CalculateChance(peg, debufFake.debuffChange);
+                    peg.ApplyDebuf();
                     break;
                 case PegDebuffType.NoBounce:
-                    peg.gameObject.AddComponent<DebufNoBounce>();
-                    CalculateChance(peg, debufNoBounce.debuffChange);
+                    //peg.gameObject.AddComponent<DebufNoBounce>();
+                    //CalculateChance(peg, debufNoBounce.debuffChange);
                     break;
                 case PegDebuffType.Death:
-                    peg.gameObject.AddComponent<DeathBall>();
-                    CalculateChance(peg, debufDeath.debuffChange);
+                    //peg.gameObject.AddComponent<DeathBall>();
+                    //CalculateChance(peg, debufDeath.debuffChange);
                     break;
                 /*case PegDebuffType.PopScream:
                     //par.Value.SetPopScream(debufPopScream.debuffChange);
