@@ -11,7 +11,8 @@ public class PointPeg : BasicPeg
         if (_hasBeenHit)
         {
             ApplyPopEffect();
-            //
+            UpdatePointPegCount();
+            DataMessenger.SetInt(IntKey.DestroyedPointPegID, _myId);
             EventMessenger.TriggerEvent(EventKey.DestroyedPointPeg);
             Destroy(gameObject);
         }
@@ -31,21 +32,9 @@ public class PointPeg : BasicPeg
         EventMessenger.TriggerEvent(EventKey.NewPointPegCreated);
     }
 
-    private void OnDestroy()
-    {
-        if (_hasBeenHit)
-        {
-            ApplyPopEffect();
-            DataMessenger.SetInt(IntKey.DestroyedPointPegID, _myId);
-            EventMessenger.TriggerEvent(EventKey.DestroyedPointPeg);
-            Destroy(gameObject);
-        }
-    }
-
     private void UpdatePointPegCount()
     {
         DataMessenger.SetInt(IntKey.PointPegCount, DataMessenger.GetInt(IntKey.PointPegCount) + 1);
-        EventMessenger.TriggerEvent(EventKey.PointPegCaught);
     }
 
     private void ApplyPopEffect()
@@ -61,8 +50,6 @@ public class PointPeg : BasicPeg
 
             GetComponentInChildren<SpriteRenderer>().sprite = _interactedSprite;
             _animator.SetBool(_HAS_BEEN_HIT, true);
-
-            UpdatePointPegCount();
 
             AudioPlayer.PlaySound(SoundKey.BubblePop, 0.95f, 1.05f);
         }
