@@ -6,8 +6,7 @@ public class PegRandomizer : MonoBehaviour
 {
     private static readonly System.Random rng = new();
 
-    [Header("Peg Info")]
-    [SerializeField] private int _pointPegCount; // How many point pegs there should be
+    private int _pointPegCount; // How many point pegs there should be
 
     [Header("Prefabs")]
     [SerializeField] private GameObject _pointPegPrefab;
@@ -24,15 +23,48 @@ public class PegRandomizer : MonoBehaviour
     [SerializeField] private Vector2 _gridBottomRight; // Bottom right bounds of peg grid
     [SerializeField] private float _gridInterval; // Vertical/horizontal distance between adjacent pegs
 
-    [SerializeField] private float turretAvoidDistannce; // Prevent pegs from spawning within this distance of the turret
+    [SerializeField] private float _turretAvoidDistannce; // Prevent pegs from spawning within this distance of the turret
+
+    [Header("Peg Position Choosing")]
+    [SerializeField] private float _gridChance; // Weighted chance for grid
+    [SerializeField] private float _presetChance; // Weighted chance for preset
+
+    [Header("Preset Peg Positions")]
+    [SerializeField] private List<GameObject> _presetPegPositionHolders; // Prefabs holding preset peg positions in children
 
     private void Start()
     {
         SceneManager.SetActiveScene(gameObject.scene);
 
-        CreatePegs();
+        _pointPegCount = DataMessenger.GetInt(IntKey.StartingPointPegCount);
+
+        ChoosePegCreation();
     }
-    private void CreatePegs()
+    private void ChoosePegCreation()
+    {
+        if (Random.Range(0, _gridChance + _presetChance) < _gridChance)
+        {
+            CreatePegsGrid();
+        }
+        else
+        {
+            CreatePegsPreset();
+        }
+    }
+    private void CreatePegsPreset()
+    {
+        GameObject _pegPositionHolder = _presetPegPositionHolders[Random.Range(0, _presetPegPositionHolders.Count)];
+
+        List<Vector3> pegPositions = new();
+
+        for (int i = 0, len = _pegPositionHolder.transform.childCount; i < len; ++i)
+        {
+            pegPositions.Add(_pegPositionHolder.transform.GetChild(i).position);
+        }
+
+        CreatePegs(pegPositions);
+    }
+    private void CreatePegsGrid()
     {
         // Adding 0.05f to account for floating point errors
         int gridWidth = (int)((_gridBottomRight.x - _gridTopLeft.x) / _gridInterval + 1 + 0.05f);
@@ -51,13 +83,17 @@ public class PegRandomizer : MonoBehaviour
                 {
                     Vector3 pos = new Vector3(_gridTopLeft.x + j * _gridInterval + Random.Range(-_maxPositionOffset, _maxPositionOffset), 
                         _gridTopLeft.y - i * _gridInterval + Random.Range(-_maxPositionOffset, _maxPositionOffset));
-                    if (Vector2.Distance(pos, turretPosition) > turretAvoidDistannce)
+                    if (Vector2.Distance(pos, turretPosition) > _turretAvoidDistannce)
                     {
                         pegPositions.Add(pos);
                     }
                 }
             }
         }
+        CreatePegs(pegPositions);
+    }
+    private void CreatePegs(List<Vector3> pegPositions)
+    {
         Shuffle(pegPositions);
 
         bool forcePointPeg = false;

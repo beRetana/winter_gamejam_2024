@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject _winUIPrefab;
     [SerializeField] private GameObject _loseUIPrefab;
+
+    [SerializeField] private string _sceneToLoad; // Scene to load in build
     private void OnEnable()
     {
         EventMessenger.StartListening(EventKey.WonGame, WonGame);
@@ -22,14 +24,28 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         DataMessenger.SetBool(BoolKey.IsGameActive, true);
+
+        if (!Application.isEditor)
+        {
+            SceneManager.LoadSceneAsync(_sceneToLoad, LoadSceneMode.Additive);
+        }
     }
 
     private void RestartGame()
     {
+        DataMessenger.SetInt(IntKey.PointPegCount, 0);
+        DataMessenger.SetBool(BoolKey.IsGameActive, true);
+
+        // Reset score
+        DataMessenger.SetInt(IntKey.ScoreToAdd, -DataMessenger.GetInt(IntKey.CurrentScore));
+        EventMessenger.TriggerEvent(EventKey.AddScore);
+
+        EventMessenger.TriggerEvent(EventKey.ResetDebuffs);
+
         string gameSceneName = SceneManager.GetActiveScene().name;
+
         SceneManager.UnloadSceneAsync(gameSceneName);
         SceneManager.LoadSceneAsync(gameSceneName, LoadSceneMode.Additive);
-        DataMessenger.SetBool(BoolKey.IsGameActive, true);
     }
     public void LostGame()
     {

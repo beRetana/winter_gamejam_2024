@@ -20,7 +20,7 @@ public class PointPeg : BasicPeg
 
     protected override void Start()
     {
-        EventMessenger.StartListening(EventKey.RoundEnded, OnDestroyPeg);
+        EventMessenger.StartListening(EventKey.DestroyPegs, OnDestroyPeg);
 
         _pointPeg_ID++;
         _myId = _pointPeg_ID;
