@@ -6,6 +6,10 @@ public class TurretGunRotation : MonoBehaviour
     private float _MIN_ANGLE = 285;
     private float _MAX_ANGLE = 75;
 
+    private void Awake()
+    {
+        DataMessenger.SetVector2(Vector2Key.TurretPosition, transform.position);
+    }
     private void Update()
     {
         Rotate();

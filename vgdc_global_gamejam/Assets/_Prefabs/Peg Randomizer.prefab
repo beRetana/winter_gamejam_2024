@@ -47,10 +47,11 @@ MonoBehaviour:
   _pointPegCount: 15
   _pointPegPrefab: {fileID: 4988483918740888517, guid: a1e35bde56c487d42a0628a051c3b835, type: 3}
   _basicPegPrefab: {fileID: 2333106511465785185, guid: 02c5921ed86ac4585a1524eca27b6a8d, type: 3}
-  _pegChance: 0.716
+  _pegChance: 0.518
   _pointPegWeight: 4
   _basicPegWeight: 8
-  _maxPositionOffset: 0.2
-  _gridTopLeft: {x: -6, y: 3}
-  _gridBottomRight: {x: 6, y: -3}
-  _gridInterval: 1.2
+  _maxPositionOffset: 0
+  _gridTopLeft: {x: -7, y: 3}
+  _gridBottomRight: {x: 7, y: -3}
+  _gridInterval: 1.3
+  turretAvoidDistannce: 3

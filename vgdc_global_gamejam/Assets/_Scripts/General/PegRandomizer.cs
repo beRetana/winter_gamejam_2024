@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PegRandomizer : MonoBehaviour
 {
-    private static System.Random rng = new();
+    private static readonly System.Random rng = new();
 
     [Header("Peg Info")]
     [SerializeField] private int _pointPegCount; // How many point pegs there should be
@@ -23,6 +23,8 @@ public class PegRandomizer : MonoBehaviour
     [SerializeField] private Vector2 _gridBottomRight; // Bottom right bounds of peg grid
     [SerializeField] private float _gridInterval; // Vertical/horizontal distance between adjacent pegs
 
+    [SerializeField] private float turretAvoidDistannce; // Prevent pegs from spawning within this distance of the turret
+
     private void Start()
     {
         CreatePegs();
@@ -33,6 +35,7 @@ public class PegRandomizer : MonoBehaviour
         int gridWidth = (int)((_gridBottomRight.x - _gridTopLeft.x) / _gridInterval + 1 + 0.05f);
         int gridHeight = (int)((_gridTopLeft.y - _gridBottomRight.y) / _gridInterval + 1 + 0.05f);
 
+        Vector2 turretPosition = DataMessenger.GetVector2(Vector2Key.TurretPosition);
 
         List<Vector3> pegPositions = new();
 
@@ -45,7 +48,10 @@ public class PegRandomizer : MonoBehaviour
                 {
                     Vector3 pos = new Vector3(_gridTopLeft.x + j * _gridInterval + Random.Range(-_maxPositionOffset, _maxPositionOffset), 
                         _gridTopLeft.y - i * _gridInterval + Random.Range(-_maxPositionOffset, _maxPositionOffset));
-                    pegPositions.Add(pos);
+                    if (Vector2.Distance(pos, turretPosition) > turretAvoidDistannce)
+                    {
+                        pegPositions.Add(pos);
+                    }
                 }
             }
         }
