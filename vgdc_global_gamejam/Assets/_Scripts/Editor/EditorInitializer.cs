@@ -27,7 +27,8 @@ public class EditorInitializer
         //"Start" // "whatever this scene is"
         //"Game_Brandon" // "whatever this scne actually is"
         //"Game" // Turret Testing
-        "Chris_Test",
+        //"Chris_Test",
+        "Start"
     };
 
     static EditorInitializer()
