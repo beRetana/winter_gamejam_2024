@@ -7,6 +7,7 @@ public class FakePeg : MonoBehaviour, IDebuf
     public void DisableDebuff()
     {
         GetComponent<Collider2D>().isTrigger = false;
+        this.enabled = false;
     }
 
     public void EnableDebuff()

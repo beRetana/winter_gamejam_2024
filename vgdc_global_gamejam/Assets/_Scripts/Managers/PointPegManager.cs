@@ -26,7 +26,6 @@ public class PointPegManager : MonoBehaviour
     private void OnPointPegCaught()
     {
         int pointPegCount = DataMessenger.GetInt(IntKey.PointPegCount);
-        _pointPegMultipliyer++;
         
         if (pointPegCount == 0){return;}
 
@@ -35,10 +34,10 @@ public class PointPegManager : MonoBehaviour
             EventMessenger.TriggerEvent(EventKey.WonGame);
             return;
         }
-
         if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 
         {
             EventMessenger.TriggerEvent(EventKey.ShowDebuffSelection);
+            _pointPegMultipliyer++;
         }
     }
 }
