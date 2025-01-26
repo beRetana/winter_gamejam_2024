@@ -4,6 +4,7 @@ public class TestManager : MonoBehaviour
 {
     private KeyCode TEST_SCORE_ADD_KEY = KeyCode.M;
     private KeyCode TEST_CURSE_RA_KEY = KeyCode.R;
+    private KeyCode TEST_RESTART_KEY = KeyCode.N;
     private KeyCode TEST_DEBUFF_SELECTION_KEY = KeyCode.V;
     private void Update()
     {
@@ -16,6 +17,10 @@ public class TestManager : MonoBehaviour
             else if (Input.GetKeyDown(TEST_CURSE_RA_KEY))
             {
                 EventMessenger.TriggerEvent(EventKey.FlashCurseOfRa);
+            }
+            else if (Input.GetKeyDown(TEST_RESTART_KEY))
+            {
+                EventMessenger.TriggerEvent(EventKey.RestartGame);
             }
             else if (Input.GetKeyDown(TEST_DEBUFF_SELECTION_KEY))
             {
