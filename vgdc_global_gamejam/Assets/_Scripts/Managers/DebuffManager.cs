@@ -54,9 +54,9 @@ public class DebuffManager : MonoBehaviour
                 info = GetRandomDebuff();
             }
             _debuffTypes.Add(i, (info.Item1, info.Item2));
-
-            _debuffSelectionObject.transform.GetChild(0).GetChild(i).name = i + " " + _debuffTypes[i].Item1 + 
-                " " + info.Item3;
+            _debuffSelectionObject.transform.GetChild(0).GetChild(i).GetChild(1).name = i + " " + _debuffTypes[i].Item1 + " " + info.Item3;
+            //_debuffSelectionObject.transform.GetChild(0).GetChild(i).name = i + " " + _debuffTypes[i].Item1 + 
+                //" " + info.Item3;
         }
     }
 

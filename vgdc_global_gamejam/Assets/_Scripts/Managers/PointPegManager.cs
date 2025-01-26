@@ -16,18 +16,18 @@ public class PointPegManager : MonoBehaviour
     private void OnPointPegCaught()
     {
         int pointPegCount = DataMessenger.GetInt(IntKey.PointPegCount);
-        _pointPegMultipliyer++;
         
         if (pointPegCount == 0){return;}
 
         if (pointPegCount == _pointPegMaxCount)
         {
             EventMessenger.TriggerEvent(EventKey.WonGame);
+            return;
         }
-
         if (pointPegCount >= _pointPegCurse * _pointPegMultipliyer ) 
         {
             EventMessenger.TriggerEvent(EventKey.ShowDebuffSelection);
+            _pointPegMultipliyer++;
         }
     }
 }

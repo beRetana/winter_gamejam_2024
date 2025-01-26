@@ -53,17 +53,20 @@ public class BallController : MonoBehaviour
         DataMessenger.SetFloat(FloatKey.CurrentBallMass, _rigidbody.mass);
         EventMessenger.TriggerEvent(EventKey.BallInfoUpdated);
     }
+    
     private void UpdateDebuffs()
     {
         _rigidbody.mass = originalMass * DataMessenger.GetFloat(FloatKey.BallMassMultiplier);
         UpdateBallInfo();
     }
+
     private void AddForce()
     {
         _rigidbody.AddForce(DataMessenger.GetVector2(Vector2Key.BulletDirection) * _velocity, ForceMode2D.Impulse);
 
         DataMessenger.SetBool(BoolKey.IsBallInPlay, true);
     }
+
     private void DestroyBall()
     {
         DataMessenger.SetBool(BoolKey.IsBallInPlay, false);
