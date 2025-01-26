@@ -20,6 +20,7 @@ public class CurseOfRa : ImageUtil
     {
         image.enabled = true;
         image.SetAlpha(1);
+        StopAllCoroutines();
 
         StartCoroutine(FadeOut());
     }

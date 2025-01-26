@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PegRandomizer : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class PegRandomizer : MonoBehaviour
 
     private void Start()
     {
+        SceneManager.SetActiveScene(gameObject.scene);
+
         CreatePegs();
     }
     private void CreatePegs()
