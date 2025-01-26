@@ -6,21 +6,9 @@ using UnityEngine;
 
 public class PegManager : MonoBehaviour
 {
-    [SerializeField] private PegDebuffStats debufFake;
-    [SerializeField] private PegDebuffStats debufNoBounce;
-    [SerializeField] private PegDebuffStats debufDeath;
-    [SerializeField] private PegDebuffStats debufPopScream;
-
     public enum PegDebuffType
     {
         Fake, NoBounce, Death
-    }
-
-    [Serializable]
-    public struct PegDebuffStats
-    {
-        public PegDebuffType debuffType;
-        public float debuffChange;
     }
 
     private Dictionary<int, BasicPeg> currentBluePegs = new();
@@ -83,45 +71,28 @@ public class PegManager : MonoBehaviour
         PegDebuffType debuffType = (PegDebuffType)DataMessenger.GetInt(IntKey.DebuffEnumID);
         //(PegDebuffType)UnityEngine.Random.Range(0, Enum.GetNames(typeof(PegDebuffType)).Length);
 
-        switch (debuffType)
-            {
-                case PegDebuffType.Fake:
-                    int rand = UnityEngine.Random.Range(0, GetBluePegSize()+1);
-
-                    BasicPeg peg = currentBluePegs[rand];
-                    peg.gameObject.AddComponent<FakePeg>();
-                    peg.ApplyDebuf();
-                    break;
-                case PegDebuffType.NoBounce:
-                    //peg.gameObject.AddComponent<DebufNoBounce>();
-                    //CalculateChance(peg, debufNoBounce.debuffChange);
-                    break;
-                case PegDebuffType.Death:
-                    //peg.gameObject.AddComponent<DeathBall>();
-                    //CalculateChance(peg, debufDeath.debuffChange);
-                    break;
-                /*case PegDebuffType.PopScream:
-                    //par.Value.SetPopScream(debufPopScream.debuffChange);
-                    UnityEngine.Debug.Log("PopScream");
-                    break;*/
-            }
-    }
-    
-    private void CalculateChance(float chance)
-    {
         foreach (BasicPeg peg in currentBluePegs.Values)
         {
-            float rand = UnityEngine.Random.Range(0.0f, 1.0f);
+            if (peg.gameObject.GetComponent<IDebuf>() != null){return;}
 
-            if (rand <= chance)
+            UnityEngine.Debug.Log(peg.gameObject.name);
+            switch (debuffType)
             {
-                UnityEngine.Debug.Log("Debuff Applied To: " + peg.gameObject.name);
-                peg.gameObject.AddComponent<DebufNoBounce>();
-                peg.ApplyDebuf();
+                case PegDebuffType.Fake:
+                    peg.gameObject.AddComponent<FakePeg>();
+                    break;
+                case PegDebuffType.NoBounce:
+                    peg.gameObject.AddComponent<DebufNoBounce>();
+                    break;
+                case PegDebuffType.Death:
+                    peg.gameObject.AddComponent<DeathBall>();
+                    break;
+                
             }
-            
+            peg.gameObject.AddComponent<FakePeg>();
+            peg.ApplyDebuf();
+            return;
         }
-        
     }
 
     public int GetBluePegSize()
