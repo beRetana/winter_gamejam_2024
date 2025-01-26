@@ -14,16 +14,15 @@ public class AudioPlayer : MonoBehaviour
 
     private void Awake()
     {
-        if (sounds == null)
-        {
-            // Initialize static sounds dict
-            sounds = new Dictionary<string, AudioSource>();
-            soundsHolder = GameObject.Find(SOUNDS_HOLDER_OBJECT_NAME);
+        if (sounds != null) return;
 
-            GetSounds(soundsHolder.transform);
+        // Initialize static sounds dict
+        sounds = new Dictionary<string, AudioSource>();
+        soundsHolder = GameObject.Find(SOUNDS_HOLDER_OBJECT_NAME);
 
-            instance = this;
-        }
+        GetSounds(soundsHolder.transform);
+
+        instance = this;
     }
 
     /// <summary>
@@ -31,11 +30,7 @@ public class AudioPlayer : MonoBehaviour
     /// </summary>
     public static void PlaySound(string key, bool doRestartSound = true)
     {
-        if (sounds[key].isPlaying && !doRestartSound)
-        {
-            return;
-        }
-        sounds[key].Play();
+        PlaySound(key, -1f, doRestartSound); 
     }
 
     /// <summary>
@@ -47,7 +42,7 @@ public class AudioPlayer : MonoBehaviour
         {
             return;
         }
-        sounds[key].volume = volume;
+        sounds[key].volume = (volume==-1)?100f:volume;
         sounds[key].Play();
     }
 
