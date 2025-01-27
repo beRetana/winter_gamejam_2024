@@ -1329,6 +1329,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2712188783959465585, guid: a8ba2a48733237e468943e993886a28b, type: 3}
+      propertyPath: _pegChance
+      value: 0.944
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712188783959465585, guid: a8ba2a48733237e468943e993886a28b, type: 3}
       propertyPath: '_presetPegPositionHolders.Array.data[0]'
       value: 
       objectReference: {fileID: 4977673144354040557, guid: 23159cdb2890f2840bbbcf13a07886d6, type: 3}
@@ -2313,15 +2317,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.x
-      value: 13.57
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.y
-      value: 8.811688
+      value: -0.5194805
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.z
-      value: 8.811688
+      value: -0.5194805
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3068,8 +3072,8 @@ Transform:
   m_GameObject: {fileID: 5915471604609225124}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -3.18, z: 0.5}
-  m_LocalScale: {x: 0.5678125, y: 0.5678125, z: 0.5678125}
+  m_LocalPosition: {x: 0.38, y: -3.36, z: 0.5}
+  m_LocalScale: {x: 0.6063102, y: 0.5891623, z: 0.5678125}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 128033030}

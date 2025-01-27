@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d4da53e2a27b449a6db8e5519c9e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointPegCount: 15
   _pointPegPrefab: {fileID: 4988483918740888517, guid: a1e35bde56c487d42a0628a051c3b835, type: 3}
   _basicPegPrefab: {fileID: 2333106511465785185, guid: 02c5921ed86ac4585a1524eca27b6a8d, type: 3}
   _pegChance: 0.577
@@ -53,7 +52,7 @@ MonoBehaviour:
   _maxPositionOffset: 0
   _gridTopLeft: {x: -7, y: 2}
   _gridBottomRight: {x: 7, y: -3}
-  _gridInterval: 1.3
+  _gridInterval: 1
   _turretAvoidDistannce: 0
   _gridChance: 1
   _presetChance: 1
