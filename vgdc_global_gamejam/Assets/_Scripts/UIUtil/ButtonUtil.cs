@@ -1,8 +1,4 @@
-using log4net.Util;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Diagnostics;
+
 using UnityEngine.UI;
 
 public class ButtonUtil : UIComponentUtil

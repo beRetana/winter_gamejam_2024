@@ -22,7 +22,7 @@ public class EditorInitializer
     // The scenes names that you want to load in addition to the first scene. Loaded in the list order.
     static List<string> extraScenesToLoad = new List<string>
     {
-        "marybuild"
+        "Start"
     };
 
     static EditorInitializer()

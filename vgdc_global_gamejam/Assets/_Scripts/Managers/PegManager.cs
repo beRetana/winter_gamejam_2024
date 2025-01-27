@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using Mono.Cecil.Cil;
 using UnityEngine;
 
 public class PegManager : MonoBehaviour
