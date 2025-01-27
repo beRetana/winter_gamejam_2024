@@ -45,6 +45,9 @@ public class Peg : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Hit();
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            Hit();
+        }
     }
 }

@@ -82,12 +82,18 @@ public class BasicPeg : MonoBehaviour, IPeg
 
     void OnCollisionEnter2D(Collision2D other) 
     {
-        StartCoroutine(TimeOn());
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            StartCoroutine(TimeOn());
+        }
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        StopCoroutine(TimeOn());
+        if (other.gameObject.CompareTag("Ball"))
+        {
+            StopCoroutine(TimeOn());
+        }
     }
 
     IEnumerator TimeOn()
