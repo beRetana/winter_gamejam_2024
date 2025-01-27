@@ -2319,6 +2319,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.53844786
       objectReference: {fileID: 0}
+    - target: {fileID: 6714585556905756693, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: loseSprite
+      value: 
+      objectReference: {fileID: -1589299340827658643, guid: eb07892d9388cbc4b8bfda6b65b1c159, type: 3}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.x
       value: 12.32

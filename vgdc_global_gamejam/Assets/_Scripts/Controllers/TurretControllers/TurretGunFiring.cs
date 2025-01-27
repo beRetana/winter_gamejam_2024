@@ -46,11 +46,10 @@ public class TurretGunFiring : MonoBehaviour
     }
     private void Update()
     {
-        // Update direction
         DataMessenger.SetVector2(Vector2Key.BulletDirection, 
             (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized);
-
     }
+
     private void AddBall()
     {
         UpdateBallCount(1);
