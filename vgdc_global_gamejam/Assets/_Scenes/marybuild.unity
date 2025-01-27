@@ -1330,7 +1330,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2712188783959465585, guid: a8ba2a48733237e468943e993886a28b, type: 3}
       propertyPath: _pegChance
-      value: 0.944
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712188783959465585, guid: a8ba2a48733237e468943e993886a28b, type: 3}
+      propertyPath: _gridChance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2712188783959465585, guid: a8ba2a48733237e468943e993886a28b, type: 3}
       propertyPath: '_presetPegPositionHolders.Array.data[0]'
@@ -2317,15 +2321,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.8
+      value: 12.32
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.y
-      value: -0.5194805
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_LocalScale.z
-      value: -0.5194805
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_AnchoredPosition.x
