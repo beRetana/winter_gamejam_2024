@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,10 +45,17 @@ public class GameManager : MonoBehaviour
 
         string gameSceneName = SceneManager.GetActiveScene().name;
 
-        SceneManager.UnloadSceneAsync(gameSceneName);
-        SceneManager.LoadSceneAsync(gameSceneName);
+        SceneManager.LoadScene("Start");
+        //SceneManager.LoadSceneAsync(gameSceneName);
     }
-    
+
+    IEnumerator LoadScene(string gameSceneName)
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(gameSceneName);
+        SceneManager.UnloadSceneAsync("Loading");
+    }
+
     public void LostGame()
     {
         Debug.Log("Lost Game - From GameManager");
