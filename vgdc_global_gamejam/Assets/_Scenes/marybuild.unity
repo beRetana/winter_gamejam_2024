@@ -2295,6 +2295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: In Game UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4715745679610440409, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7118323033474269158, guid: cbb9f5eec9f0389459b1f24ae85d23f8, type: 3}
     - target: {fileID: 6239835890596471837, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_Color.b
       value: 0.6464685
@@ -2306,6 +2310,30 @@ PrefabInstance:
     - target: {fileID: 6239835890596471837, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_Color.r
       value: 0.53844786
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.811688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.811688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059194093486961670, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8145198388509418484, guid: 178ccdb225e0a7548b7daba58f333076, type: 3}
       propertyPath: m_Color.b
