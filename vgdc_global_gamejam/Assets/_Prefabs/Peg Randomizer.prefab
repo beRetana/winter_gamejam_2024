@@ -58,3 +58,4 @@ MonoBehaviour:
   _presetChance: 1
   _presetPegPositionHolders:
   - {fileID: 4977673144354040557, guid: 23159cdb2890f2840bbbcf13a07886d6, type: 3}
+  - {fileID: 4977673144354040557, guid: b7c94828579af2c44ba6a1a6b8a93276, type: 3}

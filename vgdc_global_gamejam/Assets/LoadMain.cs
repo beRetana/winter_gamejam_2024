@@ -5,6 +5,6 @@ public class LoadMain : MonoBehaviour
 {
     public void LoadMainScene()
     {
-        SceneManager.LoadScene("Build");
+        SceneManager.LoadScene("marybuild");
     }
 }
