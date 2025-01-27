@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7863103712203410079}
   - component: {fileID: 2643076782368233549}
-  - component: {fileID: 6412889462715396594}
   m_Layer: 0
   m_Name: Audio Player
   m_TagString: Persist
@@ -45,16 +44,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab934f07e12b47241b017f44d4d948a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6412889462715396594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336872201556809041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6803740d4ee2c643b931b9014a57d06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectsTag: Persist

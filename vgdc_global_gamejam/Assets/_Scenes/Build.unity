@@ -2334,6 +2334,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7735849
       objectReference: {fileID: 0}
+    - target: {fileID: 5153699200487213289, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6711867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153699200487213289, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.33559346
+      objectReference: {fileID: 0}
     - target: {fileID: 7743312974076572102, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.86
@@ -2526,6 +2534,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.7735849
       objectReference: {fileID: 0}
+    - target: {fileID: 5153699200487213289, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6825527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5153699200487213289, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.34127635
+      objectReference: {fileID: 0}
     - target: {fileID: 7743312974076572102, guid: 431a8ecfa0c9a7c419ed4fcb06221c4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.53
@@ -2622,6 +2638,10 @@ PrefabInstance:
     - target: {fileID: 375304812292825074, guid: dd73bced118044d44b2f197127f53363, type: 3}
       propertyPath: m_Name
       value: Ball Back Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630590590584056663, guid: dd73bced118044d44b2f197127f53363, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

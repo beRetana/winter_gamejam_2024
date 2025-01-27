@@ -45,12 +45,14 @@ public class GameManager : MonoBehaviour
         string gameSceneName = SceneManager.GetActiveScene().name;
 
         SceneManager.UnloadSceneAsync(gameSceneName);
-        SceneManager.LoadSceneAsync(gameSceneName, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(gameSceneName);
     }
+    
     public void LostGame()
     {
         Debug.Log("Lost Game - From GameManager");
         DataMessenger.SetBool(BoolKey.IsGameActive, false);
+        Time.timeScale = 0f;
         // Lost Game
         Instantiate(_loseUIPrefab);
     }
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Won Game - From GameManager");
         DataMessenger.SetBool(BoolKey.IsGameActive, false);
+        Time.timeScale = 0f;
         // Won Game UI???
         Instantiate(_winUIPrefab);
     }

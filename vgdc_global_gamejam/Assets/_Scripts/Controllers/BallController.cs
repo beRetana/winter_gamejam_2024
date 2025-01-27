@@ -71,17 +71,21 @@ public class BallController : MonoBehaviour
     {
         DataMessenger.SetBool(BoolKey.IsBallInPlay, false);
 
-        if (DataMessenger.GetInt(IntKey.RemainingBallCount) == 0 )
-        {
-            EventMessenger.TriggerEvent(EventKey.LostGame);
-        }
-
         EventMessenger.TriggerEvent(EventKey.DestroyPegs);
         EventMessenger.TriggerEvent(EventKey.RoundEnded);
 
         Debug.Log("Lost Ball: " + DataMessenger.GetInt(IntKey.RemainingBallCount));
 
         AudioPlayer.PlaySound(SoundKey.BallPop);
+
+        if (DataMessenger.GetInt(IntKey.RemainingBallCount) == 0 )
+        {
+            EventMessenger.TriggerEvent(EventKey.LostGame);
+        }
+        else if (DataMessenger.GetInt(IntKey.PointPegCount) == DataMessenger.GetInt(IntKey.StartingPointPegCount))
+        {
+            EventMessenger.TriggerEvent(EventKey.WonGame);
+        }
 
         Destroy(gameObject);
     }

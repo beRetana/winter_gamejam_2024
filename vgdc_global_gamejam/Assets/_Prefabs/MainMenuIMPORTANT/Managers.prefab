@@ -142,7 +142,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3147422198152586681}
-  - component: {fileID: 522012800209789068}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Managers
@@ -173,19 +172,6 @@ Transform:
   - {fileID: 2605348536531071904}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &522012800209789068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4372123288938946345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6803740d4ee2c643b931b9014a57d06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectsTag: Managers
 --- !u!1 &4688900811629275558
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,18 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94aa48d2d0c209144ad35fc2ccfbe5f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debufFake:
-    debuffType: 0
-    debuffChange: 1
-  debufNoBounce:
-    debuffType: 1
-    debuffChange: 1
-  debufDeath:
-    debuffType: 2
-    debuffChange: 1
-  debufPopScream:
-    debuffType: 3
-    debuffChange: 1
 --- !u!1 &7228462063040167430
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,6 +305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd266e5c4d65f744898bc9261de02fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _winUIPrefab: {fileID: 0}
+  _loseUIPrefab: {fileID: 0}
+  _sceneToLoad: 
 --- !u!1 &7296084824476746548
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointPegMaxCount: 12
-  _pointPegCurse: 3
+  _pointPegCurseInterval: 3
 --- !u!1 &7883533228108217085
 GameObject:
   m_ObjectHideFlags: 0

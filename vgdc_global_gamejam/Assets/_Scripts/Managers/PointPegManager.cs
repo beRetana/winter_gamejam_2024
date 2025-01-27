@@ -12,7 +12,6 @@ public class PointPegManager : MonoBehaviour
     {
         EventMessenger.StartListening(EventKey.RoundEnded, OnPointPegCaught);
         EventMessenger.StartListening(EventKey.RestartGame, ResetInfo);
-
     }
     private void OnDisable()
     {
@@ -41,7 +40,7 @@ public class PointPegManager : MonoBehaviour
             EventMessenger.TriggerEvent(EventKey.WonGame);
             return;
         }
-        if (pointPegCount >= _pointPegCurseInterval * _pointPegMultipliyer && DataMessenger.GetBool(BoolKey.IsGameActive)) 
+        else if (pointPegCount >= _pointPegCurseInterval * _pointPegMultipliyer && DataMessenger.GetBool(BoolKey.IsGameActive)) 
         {
             EventMessenger.TriggerEvent(EventKey.ShowDebuffSelection);
             _pointPegMultipliyer = pointPegCount / _pointPegCurseInterval + 1;
